@@ -7,9 +7,14 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
 
     public TalkManager talkManager;
+    public MoveScene sceneManager;
 
     [SerializeField]
     public Player Player;
+
+    [SerializeField]
+    public int Stage = 0;
+
 
     public static GameManager Instance
     {

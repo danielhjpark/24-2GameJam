@@ -38,8 +38,8 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
         if(transform.parent == onDragParent)
         {
-            transform.position = startPosition;
             transform.SetParent(startParent);
+            transform.position = startPosition;
         }
     }
 }
