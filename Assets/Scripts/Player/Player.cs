@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
 
     Rigidbody2D rigid;
 
+
+    public GameObject target;
+
     Vector3 movement;
     bool isJumping = false;
 
@@ -64,4 +67,18 @@ public class Player : MonoBehaviour
         isJumping = false;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "TalkTag")
+        {
+            target = collision.gameObject;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "TalkTag")
+        {
+            target = null;
+        }
+    }
 }
