@@ -47,7 +47,7 @@ public class TalkManager : MonoBehaviour
     {
         if (nowDialogue == null)
             return;
-
+        GameManager.Instance.Player.isMoving = false;
         ONOFF(true); //대화가 시작됨
         count = 0;
         NextDialogue(); //호출되자마자 대사가 진행될 수 있도록 
@@ -83,8 +83,15 @@ public class TalkManager : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 //대화의 끝을 알아야함.
-                if (count < nowDialogue.Length) NextDialogue(); //다음 대사가 진행됨
-                else ONOFF(false); //대사가 끝남
+                if (count < nowDialogue.Length)
+                {
+                    NextDialogue(); //다음 대사가 진행됨
+                }
+                else
+                {
+                    ONOFF(false); //대사가 끝남
+                    GameManager.Instance.Player.isMoving = true;
+                }
 
             }
         }

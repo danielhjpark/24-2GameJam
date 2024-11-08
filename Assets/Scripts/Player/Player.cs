@@ -19,6 +19,8 @@ public class Player : MonoBehaviour
     Vector3 movement;
     bool isJumping = false;
 
+    public bool isMoving = true;
+
     private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -35,8 +37,11 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Move();
-        Jump();
+        if(isMoving)
+        {
+            Move();
+            Jump();
+        }
     }
 
     void Move()
