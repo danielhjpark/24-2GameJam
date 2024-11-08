@@ -45,6 +45,9 @@ public class TalkManager : MonoBehaviour
 
     public void ShowDialogue()
     {
+        if (nowDialogue == null)
+            return;
+
         ONOFF(true); //대화가 시작됨
         count = 0;
         NextDialogue(); //호출되자마자 대사가 진행될 수 있도록 
@@ -68,7 +71,6 @@ public class TalkManager : MonoBehaviour
         txt_NameDialogue.text = nowDialogue[count].name;
 
         count++; //다음 대사와 cg가 나오도록 
-
     }
 
 
