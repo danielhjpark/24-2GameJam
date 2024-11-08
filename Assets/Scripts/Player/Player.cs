@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
 
     Rigidbody2D rigid;
 
+    private SpriteRenderer playerSpriteRenderer;
+
 
     public GameObject target;
 
@@ -20,6 +22,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
+        playerSpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -43,11 +46,13 @@ public class Player : MonoBehaviour
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
             moveVelocity = Vector3.left;
+            playerSpriteRenderer.flipX = false; //플레이어 스프라이트 반전
         }
 
         else if (Input.GetAxisRaw("Horizontal") > 0)
         {
             moveVelocity = Vector3.right;
+            playerSpriteRenderer.flipX = true;//플레이어 스프라이트 반전
         }
 
         transform.position += moveVelocity * MoveSpeed * Time.deltaTime;
