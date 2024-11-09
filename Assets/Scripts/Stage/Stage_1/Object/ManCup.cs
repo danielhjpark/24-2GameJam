@@ -27,7 +27,9 @@ public class ManCup : MonoBehaviour
                 Debug.Log("Get");
                 check.Clear();
                 sound.Play();
-                Destroy(this);
+                GameManager.Instance.Player.isMoving = false;
+                StartCoroutine(Stop());
+                
             }
         }
     }
@@ -38,5 +40,13 @@ public class ManCup : MonoBehaviour
         {
             canGet = false;
         }
+    }
+
+    IEnumerator Stop()
+    {
+        GameManager.Instance.Player.isMoving = false;
+        yield return new WaitForSeconds(2.0f);
+        GameManager.Instance.Player.isMoving = true;
+        Destroy(this);
     }
 }

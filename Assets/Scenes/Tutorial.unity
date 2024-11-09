@@ -206,8 +206,8 @@ MonoBehaviour:
   - dialogue: "\uC815\uB9D0\u2026\uC774\uAC78\uB85C \uACFC\uAC70\uB85C \uB3CC\uC544\uAC08
       \uC218 \uC788\uC744\uAE4C?\r"
     name: "\uC18C\uB140"
-  - dialogue: "\"\uC544\uBE60\uB97C \uB2E4\uC2DC \uB9CC\uB09C\uB2E4\uACE0 \uD574\uB3C4\u2026\uBB50\uAC00
-      \uB2EC\uB77C\uC9C8\uAE4C? \n\uB0B4\uAC00 \uBB58 \uD560 \uC218 \uC788\uC744\uAE4C?\"\r"
+  - dialogue: "\uC544\uBE60\uB97C \uB2E4\uC2DC \uB9CC\uB09C\uB2E4\uACE0 \uD574\uB3C4\u2026\uBB50\uAC00
+      \uB2EC\uB77C\uC9C8\uAE4C? \n\uB0B4\uAC00 \uBB58 \uD560 \uC218 \uC788\uC744\uAE4C?\r"
     name: "\uC18C\uB140"
   - dialogue: "\u2026\uC544\uBB34\uB9AC \uADF8\uB798\uB3C4, \uC9C0\uAE08 \uC774 \uC2DC\uACC4
       \uB9D0\uACE0\uB294 \uBC29\uBC95\uC774 \uC5C6\uB294 \uAC70 \uAC19\uC544. \r"
@@ -268,6 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onDragParent: {fileID: 2034247164}
   startParent: {fileID: 0}
+  soundPlay: {fileID: 0}
 --- !u!225 &204020840
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -542,6 +543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onDragParent: {fileID: 2034247164}
   startParent: {fileID: 0}
+  soundPlay: {fileID: 0}
 --- !u!225 &727290008
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1182,6 +1184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onDragParent: {fileID: 2034247164}
   startParent: {fileID: 0}
+  soundPlay: {fileID: 0}
 --- !u!225 &1553988812
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1388,6 +1391,9 @@ MonoBehaviour:
   panel: {fileID: 2034247163}
   child: {fileID: 0}
   popUpUI: {fileID: 0}
+  playSound: {fileID: 0}
+  changeImage: {fileID: 0}
+  record: {fileID: 0}
 --- !u!114 &1885593643
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -25,7 +25,8 @@ public class Kettle : MonoBehaviour
                 Debug.Log("Get");
                 mancup.hasHotWater = true;
                 soundPlay.Play();
-                Destroy(this.gameObject);
+                StartCoroutine(Stop());
+                
             }
         }
     }
@@ -36,5 +37,13 @@ public class Kettle : MonoBehaviour
         {
             canGet = false;
         }
+    }
+
+    IEnumerator Stop()
+    {
+        GameManager.Instance.Player.isMoving = false;
+        yield return new WaitForSeconds(2.0f);
+        GameManager.Instance.Player.isMoving = true;
+        Destroy(this.gameObject);
     }
 }
