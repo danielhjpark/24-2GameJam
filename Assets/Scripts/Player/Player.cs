@@ -12,9 +12,6 @@ public class Player : MonoBehaviour
 
     private SpriteRenderer playerSpriteRenderer;
 
-
-    public GameObject target;
-
     Vector3 movement;
 
     public bool isMoving = true;
@@ -31,10 +28,15 @@ public class Player : MonoBehaviour
         {
             Move();
         }
+        else
+        {
+            animator.SetBool("Walk", false);
+        }
     }
 
     void Move()
     {
+        Debug.Log("CanMoving");
         Vector3 moveVelocity = Vector3.zero;
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
@@ -66,21 +68,8 @@ public class Player : MonoBehaviour
             animator.SetBool("Walk", false);
         }
 
+        Debug.Log(moveVelocity);
+
         transform.position += moveVelocity * MoveSpeed * Time.deltaTime;
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.tag == "TalkTag")
-        {
-            Debug.Log("Ãæµ¹ µÊ");
-            target = collision.gameObject;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "TalkTag")
-        {
-            target = null;
-        }
     }
 }

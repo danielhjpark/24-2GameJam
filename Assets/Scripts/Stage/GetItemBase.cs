@@ -6,7 +6,9 @@ public class GetItemBase : MonoBehaviour
 {
 
     [SerializeField] public bool canGet = false;
-    [SerializeField] public ItemBase item;
+
+    [SerializeField]
+    private StageChat stageChat;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,7 +24,7 @@ public class GetItemBase : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                item.UseItem();
+                stageChat.ShowDialogue();
             }
         }
     }

@@ -38,13 +38,4 @@ public class Stage1Manager : MonoBehaviour
             cameraManager.stageClear = true;
         }
     }
-
-    public void CheckAllList()
-    {
-        if (check1 && check2 && check3)
-        {
-            // 스테이지 클리어
-            GameManager.Instance.sceneManager.NextStage("Stage_2");
-        }
-    }
 }

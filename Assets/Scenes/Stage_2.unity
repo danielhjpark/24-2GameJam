@@ -123,6 +123,79 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &9569441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9569443}
+  - component: {fileID: 9569445}
+  m_Layer: 0
+  m_Name: Stage2ChatManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9569443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9569441}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9569445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9569441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b01f6240314119447b5e7d784052cbb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txt_Dialogue: {fileID: 1470489965}
+  txt_NameDialogue: {fileID: 1470489964}
+  imgTextPanel: {fileID: 1470489963}
+  imgNamePanel: {fileID: 1470489966}
+  NextSceneName: Stage_3
+  dialogue:
+  - dialogue: "\uC74C\uC2DD\uC740 \uC785\uC5D0 \uB9DE\uC73C\uC138\uC694?\r\n"
+    name: "\uC544\uBE60 "
+  - dialogue: "\uB9DB\uC788\uB124. \uBD80\uC778\uC740 \uC5B4\uB5A4\uAC00?\r\n"
+    name: "\uB0A8\uC791 "
+  - dialogue: "\uC800\uB3C4 \uADF8\uB798\uC694. \uC694\uB9AC \uC19C\uC528\uAC00 \uC88B\uC740
+      \uB370\uC694?\r\n"
+    name: "\uB0A8\uC791 \uBD80\uC778 "
+  - dialogue: "\uAC10\uC0AC\uD569\uB2C8\uB2E4. \uB0A8\uC791 \uBD80\uC778. \uBCC4
+      \uAC70 \uC544\uB2CC \uC7AC\uC8FC\uC778\uAC78\uC694\u2026\r\n"
+    name: "\uC5C4\uB9C8 "
+  - dialogue: "\uC544\uB2C8\uC5D0\uC694. \uC774\uC815\uB3C4\uBA74 \uC6B0\uB9AC \uC9D1
+      \uC694\uB9AC\uC0AC\uD55C\uD14C \uBC30\uC6B0\uB77C\uACE0 \uD558\uACE0 \uC2F6\uC744
+      \uC815\uB3C4\uC5D0\uC694.\r"
+    name: "\uB0A8\uC791 \uBD80\uC778"
+  - dialogue: "\uCE6D\uCC2C \uAC10\uC0AC\uD569\uB2C8\uB2E4. \uC560\uAE30 \uC5C4\uB9C8\uAC00
+      \uC88B\uC544\uC11C \uC548\uC808\uBD80\uC808\uD558\uB124\uC694.\r"
+    name: "\uC544\uBE60 "
+  - dialogue: "\uB2F9\uC2E0\uC740 \uC4F8\uB370 \uC5C6\uB294 \uC18C\uB9B4! \uC8C4\uC1A1\uD574\uC694.
+      \uB0A8\uD3B8\uC774 \uC8FC\uCC45\uC774 \uC2EC\uD574\uC11C\u2026.\r"
+    name: "\uC5C4\uB9C8 "
+  - dialogue: "\uD558\uD558\uD558. \uBCF4\uAE30 \uC88B\uC740\uB370\uC694 \uBB58.\r"
+    name: "\uB0A8\uC791 \uB0B4\uC678 "
+  cameraManager: {fileID: 1175505339}
 --- !u!1 &75848458
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,7 +430,6 @@ GameObject:
   m_Component:
   - component: {fileID: 273995317}
   - component: {fileID: 273995316}
-  - component: {fileID: 273995315}
   - component: {fileID: 273995314}
   m_Layer: 0
   m_Name: GameManager
@@ -378,23 +450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb1d9c85ade88cc46bec5527d711b8be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &273995315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273995313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aeaba17269142740a45a4be28c4fb1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nowDialogue: []
-  txt_Dialogue: {fileID: 0}
-  txt_NameDialogue: {fileID: 0}
-  imgTextPanel: {fileID: 0}
-  imgNamePanel: {fileID: 0}
 --- !u!114 &273995316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,7 +462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d8b2872a7767b4ba083835ff21d7ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkManager: {fileID: 273995315}
+  talkManager: {fileID: 0}
   sceneManager: {fileID: 273995314}
   Player: {fileID: 419696827}
   Stage: 0
@@ -892,6 +947,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kitchenTable: {fileID: 299750329}
   ItemNum: 1
+--- !u!1 &388458453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 388458454}
+  m_Layer: 0
+  m_Name: CameraTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &388458454
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388458453}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.94, y: -0.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &419696826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -999,6 +1085,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!4 &419696833 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5855480450347703809, guid: 06d2482670e58fb41845d614bb622750, type: 3}
+  m_PrefabInstance: {fileID: 419696826}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &460467421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,11 +2083,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7ab3fdcc3a4d149a022bbdf48e19cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 0}
+  playerTransform: {fileID: 419696833}
   cameraPosition: {x: 0, y: 0, z: 0}
   center: {x: 0, y: 0}
   mapSize: {x: 14.5, y: 5}
   cameraMoveSpeed: 5
+  clearCameratr: {fileID: 388458454}
+  nowTarget: {fileID: 0}
+  stageClear: 0
+  sceneDone: 0
+  stageChat: {fileID: 9569445}
 --- !u!81 &1175505340
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2605,6 +2701,38 @@ PrefabInstance:
 --- !u!224 &1470489962 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1996061594426582720, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+  m_PrefabInstance: {fileID: 1470489961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1470489963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7796985704898877425, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+  m_PrefabInstance: {fileID: 1470489961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1470489964 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1944636016997835988, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+  m_PrefabInstance: {fileID: 1470489961}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1470489965 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8940034501758482842, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+  m_PrefabInstance: {fileID: 1470489961}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1470489966 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2316202473025140996, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
   m_PrefabInstance: {fileID: 1470489961}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1506640172
@@ -3438,6 +3566,7 @@ MonoBehaviour:
   check1: 0
   check2: 0
   check3: 0
+  cameraManager: {fileID: 1175505339}
 --- !u!4 &2018023287
 Transform:
   m_ObjectHideFlags: 0
@@ -3595,3 +3724,5 @@ SceneRoots:
   - {fileID: 1880566833}
   - {fileID: 273995317}
   - {fileID: 2018023287}
+  - {fileID: 388458454}
+  - {fileID: 9569443}

@@ -11,6 +11,5 @@ public class CheckScrpitBase : MonoBehaviour
     public void Clear()
     {
         stage.Check(clearNum);
-        stage.CheckAllList(nextStage);
     }
 }
