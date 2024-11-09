@@ -35,10 +35,15 @@ public class StageChat : MonoBehaviour
     [SerializeField]
     public CameraManager cameraManager;
 
+    [SerializeField]
+    public SoundManager soundManager;
+
     public void ShowDialogue()
     {
         ONOFF(true); //대화가 시작됨
+        GameManager.Instance.playMode = "color";
         GameManager.Instance.Player.isMoving = false;
+        soundManager.ChangeSound();
         
         count = 0;
         NextDialogue(); //호출되자마자 대사가 진행될 수 있도록 
@@ -82,8 +87,11 @@ public class StageChat : MonoBehaviour
                     {
                         ONOFF(false); //대사가 끝남
                         cameraManager.sceneDone = false;
+                        GameManager.Instance.playMode = "black";
                         GameManager.Instance.Player.isMoving = true;
                         GameManager.Instance.Player.gameObject.SetActive(true);
+                        soundManager.ReturnSound();
+
                         SceneManager.LoadScene(NextSceneName);
                     }
                 }
