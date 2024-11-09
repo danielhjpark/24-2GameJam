@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &39849924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 39849925}
+  m_Layer: 0
+  m_Name: CameraTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &39849925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39849924}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.74, y: -0.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &57143968
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +567,7 @@ MonoBehaviour:
   isClear: 0
   panel: {fileID: 2093531785}
   child: {fileID: 0}
+  popUpUI: {fileID: 1525937352}
 --- !u!1 &281070090
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +922,7 @@ MonoBehaviour:
   check1: 0
   check2: 0
   check3: 0
+  cameraManager: {fileID: 1473903237}
 --- !u!1 &391714273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1533,10 @@ PrefabInstance:
     - target: {fileID: 5141727767462970238, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1215752851}
+    - target: {fileID: 5141727767462970238, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 7010523513293880392, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_Name
@@ -2989,6 +3026,8 @@ MonoBehaviour:
   center: {x: 0, y: 0}
   mapSize: {x: 14.5, y: 5}
   cameraMoveSpeed: 5
+  clearCameratr: {fileID: 0}
+  stageClear: 0
 --- !u!1 &1525937346
 GameObject:
   m_ObjectHideFlags: 0
@@ -3464,3 +3503,4 @@ SceneRoots:
   - {fileID: 1967092028}
   - {fileID: 1215752853}
   - {fileID: 344893420}
+  - {fileID: 39849925}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -14,14 +15,23 @@ public class TalkManager : MonoBehaviour
     [SerializeField]
     private Text txt_NameDialogue;
     [SerializeField]
-    private Image imgTextPanel;
+    private GameObject imgTextPanel;
     [SerializeField]
-    private Image imgNamePanel;
+    private GameObject imgNamePanel;
 
 
     private bool isDialogue = false; //대화가 진행중인지 알려줄 변수
     private int count = 0; //대사가 얼마나 진행됐는지 알려줄 변수
 
+
+    private void Awake()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -46,7 +56,6 @@ public class TalkManager : MonoBehaviour
 
             }
         }
-
     }
 
     private void FixedUpdate()
@@ -100,6 +109,30 @@ public class TalkManager : MonoBehaviour
         count++; //다음 대사와 cg가 나오도록 
     }
 
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("씬로드");
+        // 새로 로드된 씬에서 TalkText를 찾아서 할당
+        GameObject talkTextObject = GameObject.Find("Canvas/Talk/TalkPanel/TalkText");
+        GameObject nameTextObject = GameObject.Find("Canvas/Talk/NamePanel/NameText");
+        GameObject talkPanelObject = GameObject.Find("Canvas/Talk/TalkPanel");
+        GameObject namePanelObject = GameObject.Find("Canvas/Talk/NamePanel");
 
-    
+        if (talkTextObject != null)
+        {
+            txt_Dialogue = talkTextObject.GetComponent<Text>();
+        }
+        if (nameTextObject != null)
+        {
+            txt_NameDialogue = nameTextObject.GetComponent<Text>();
+        }
+        if (talkPanelObject != null)
+        {
+            imgTextPanel = talkPanelObject;
+        }
+        if (namePanelObject != null)
+        {
+            imgNamePanel = namePanelObject;
+        }
+    }
 }
