@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class RecordPlayer : MonoBehaviour
 {
@@ -61,5 +62,14 @@ public class RecordPlayer : MonoBehaviour
     public void PopUpRecord()
     {
         PopUp.SetActive(!PopUp.activeSelf);
+
+        if (PopUp.activeSelf)
+        {
+            GameManager.Instance.Player.isMoving = false;
+        }
+        else if (!PopUp.activeSelf)
+        {
+            GameManager.Instance.Player.isMoving = true;
+        }
     }
 }
