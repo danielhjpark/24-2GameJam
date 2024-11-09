@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class GetItemBase : MonoBehaviour
 {
+    [SerializeField] public ItemBase item;
 
     [SerializeField] public bool canGet = false;
 
-    [SerializeField]
-    private StageChat stageChat;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("µé¾î¿È?");
         if (collision.tag == "Player")
         {
             canGet = true;
+            
         }
     }
 
@@ -24,7 +24,7 @@ public class GetItemBase : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                stageChat.ShowDialogue();
+                item.UseItem();
             }
         }
     }

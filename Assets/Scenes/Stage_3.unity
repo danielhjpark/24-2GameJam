@@ -494,8 +494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 192614956}
+  canGet: 0
 --- !u!61 &192614955
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -689,6 +689,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &250243010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4675200059956627980, guid: 06d2482670e58fb41845d614bb622750, type: 3}
+  m_PrefabInstance: {fileID: 1139253095}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &340900168
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,8 +793,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 340900173}
+  canGet: 0
 --- !u!61 &340900172
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -979,8 +984,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 390779584}
+  canGet: 0
 --- !u!61 &390779583
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1489,8 +1494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 537079895}
+  canGet: 0
 --- !u!61 &537079894
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2424,8 +2429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 1055174731}
+  canGet: 0
 --- !u!61 &1055174730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2483,7 +2488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e976632c0b46b0744907c549893188d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextSceneName: Ending
+  stageChat: {fileID: 51794434}
 --- !u!1 &1122810322
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,7 +2637,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4675200059956627980, guid: 06d2482670e58fb41845d614bb622750, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1139253103}
   m_SourcePrefab: {fileID: 100100000, guid: 06d2482670e58fb41845d614bb622750, type: 3}
 --- !u!4 &1139253098 stripped
 Transform:
@@ -2644,12 +2652,39 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8199484826710507250, guid: 06d2482670e58fb41845d614bb622750, type: 3}
   m_PrefabInstance: {fileID: 1139253095}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 250243010}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27c03039abc082e4ab4543c4f140c853, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &1139253103
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250243010}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1258822136
 GameObject:
   m_ObjectHideFlags: 0
@@ -2784,8 +2819,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 1324308244}
+  canGet: 0
 --- !u!61 &1324308243
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3074,8 +3109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 1546481486}
+  canGet: 0
 --- !u!61 &1546481485
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3296,8 +3331,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 1591469484}
+  canGet: 0
 --- !u!61 &1591469483
 BoxCollider2D:
   m_ObjectHideFlags: 0

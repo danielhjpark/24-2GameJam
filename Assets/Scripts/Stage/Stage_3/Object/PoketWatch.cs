@@ -5,9 +5,13 @@ using UnityEngine;
 public class PoketWatch : ItemBase
 {
 
+    [SerializeField]
+    private StageChat stageChat;
+
     public override void UseItem()
     {
         // 게임 클리어
         Debug.Log("게임 클리어");
+        stageChat.ShowDialogue();
     }
 }
