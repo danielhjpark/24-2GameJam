@@ -405,6 +405,7 @@ MonoBehaviour:
   check: {fileID: 206237418}
   isClear: 0
   bools: 000000
+  popUpUI: {fileID: 299750328}
 --- !u!114 &206237418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,10 +463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d8b2872a7767b4ba083835ff21d7ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkManager: {fileID: 0}
   sceneManager: {fileID: 273995314}
   Player: {fileID: 419696827}
-  Stage: 0
 --- !u!4 &273995317
 Transform:
   m_ObjectHideFlags: 0
@@ -626,8 +625,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 299750329}
+  canGet: 0
 --- !u!114 &299750328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,8 +930,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 352231276}
+  canGet: 0
 --- !u!114 &352231276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1583,8 +1582,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 757723004}
+  canGet: 0
 --- !u!114 &757723004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2570,8 +2569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 1446725073}
+  canGet: 0
 --- !u!114 &1446725075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3016,7 +3015,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 0.5377358, g: 0.3540205, b: 0.1699448, a: 1}
   m_FlipX: 0
@@ -3085,8 +3084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 1626329732}
+  canGet: 0
 --- !u!114 &1626329732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3502,8 +3501,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3be182b049634c92853e4d52d6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canGet: 0
   item: {fileID: 1930286290}
+  canGet: 0
 --- !u!114 &1930286290
 MonoBehaviour:
   m_ObjectHideFlags: 0

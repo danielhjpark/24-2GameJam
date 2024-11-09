@@ -324,6 +324,7 @@ MonoBehaviour:
   imgTextPanel: {fileID: 740881767}
   imgNamePanel: {fileID: 853852701}
   NextSceneName: Ending
+  bindPanel: {fileID: 2126053028}
   dialogue:
   - dialogue: "\uB0A8\uC791\uB2D8\u2026\uC2DC\uACC4\uB294 \uC5B4\uB5A0\uC2E0\uC9C0\uC694.\r"
     name: "\uC544\uBE60"
@@ -2488,6 +2489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e976632c0b46b0744907c549893188d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cameraManager: {fileID: 815131433}
   stageChat: {fileID: 51794434}
 --- !u!1 &1122810322
 GameObject:
@@ -3743,6 +3745,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 939610666087782385, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1996061594426582720, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3823,6 +3829,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2316202473025140996, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4286713721524212310, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3835,8 +3845,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7796985704898877425, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102856171548736634, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5089153791819262957, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1996061594426582720, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       insertIndex: -1
@@ -3849,6 +3868,11 @@ PrefabInstance:
 --- !u!224 &2126053027 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1996061594426582720, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+  m_PrefabInstance: {fileID: 2126053026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2126053028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9102856171548736634, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
   m_PrefabInstance: {fileID: 2126053026}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2136917909
@@ -3986,6 +4010,7 @@ MonoBehaviour:
   check: {fileID: 2136917912}
   isClear: 0
   bools: 000000
+  popUpUI: {fileID: 1965513520}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

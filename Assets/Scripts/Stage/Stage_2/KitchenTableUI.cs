@@ -7,6 +7,7 @@ public class KitchenTableUI : MonoBehaviour
     [SerializeField] public CheckScrpitBase check;
     [SerializeField] private bool isClear = false;
     [SerializeField] public bool[] bools = new bool[3];
+    [SerializeField] private PopUpUI popUpUI;
 
     private void Awake()
     {
@@ -26,6 +27,7 @@ public class KitchenTableUI : MonoBehaviour
         {
             isClear = true;
             check.Clear();
+            popUpUI.PopUp();
             // 애니메이션 재생이 되든 하셈
         }
     }

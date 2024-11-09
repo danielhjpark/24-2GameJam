@@ -24,6 +24,8 @@ public class StageChat : MonoBehaviour
     private GameObject imgNamePanel;
     [SerializeField]
     private string NextSceneName;
+    [SerializeField]
+    private GameObject bindPanel;
 
     private bool isDialogue = false; //대화가 진행중인지 알려줄 변수
     private int count = 0; //대사가 얼마나 진행됐는지 알려줄 변수
@@ -48,6 +50,7 @@ public class StageChat : MonoBehaviour
         imgNamePanel.gameObject.SetActive(_flag);
         txt_NameDialogue.gameObject.SetActive(_flag);
         txt_Dialogue.gameObject.SetActive(_flag);
+        bindPanel.gameObject.SetActive(_flag);
         isDialogue = _flag;
     }
 
