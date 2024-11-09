@@ -38,10 +38,9 @@ public class TalkManager : MonoBehaviour
         if (imgNamePanel == null)
             return;
 
-        //spacebar 누를 때마다 대사가 진행되도록. 
         if (isDialogue) //활성화가 되었을 때만 대사가 진행되도록
         {
-            if (Input.anyKeyDown)
+            if (Input.anyKeyDown) //스페이스바로 변경해야함.
             {
                 //대화의 끝을 알아야함.
                 if (count < nowDialogue.Length)

@@ -25,7 +25,6 @@ public class Player : MonoBehaviour
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
         animator = gameObject.GetComponent<Animator>();
     }
-
     private void FixedUpdate()
     {
         if(isMoving)
@@ -69,11 +68,11 @@ public class Player : MonoBehaviour
 
         transform.position += moveVelocity * MoveSpeed * Time.deltaTime;
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "TalkTag")
         {
+            Debug.Log("Ãæµ¹ µÊ");
             target = collision.gameObject;
         }
     }
