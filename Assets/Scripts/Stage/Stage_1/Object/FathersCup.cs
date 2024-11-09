@@ -6,12 +6,13 @@ public class FathersCup : MonoBehaviour
 {
     [SerializeField] public Transform moveTransform;
     [SerializeField] public CheckScript check;
+    [SerializeField] private PlaySound playSound;
 
     [SerializeField] public bool canGet = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && moveTransform != null)
         {
             canGet = true;
         }
@@ -26,7 +27,7 @@ public class FathersCup : MonoBehaviour
                 Debug.Log("Get");
                 this.transform.position = moveTransform.position;
                 check.Clear();
-                Destroy(this);
+                playSound.Play();
             }
         }
     }

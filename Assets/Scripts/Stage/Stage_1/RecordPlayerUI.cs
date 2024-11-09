@@ -9,6 +9,7 @@ public class RecordPlayerUI : MonoBehaviour
     [SerializeField] public GameObject panel;
     [SerializeField] public GameObject child;
     [SerializeField] public PopUpUI popUpUI;
+    [SerializeField] public PlaySound playSound;
 
     private void Update()
     {
@@ -25,6 +26,7 @@ public class RecordPlayerUI : MonoBehaviour
                 check.Clear();
                 // 애니메이션 재생이 되든 하셈
                 popUpUI.PopUp();
+                playSound.Play();
             }
         }
     }
