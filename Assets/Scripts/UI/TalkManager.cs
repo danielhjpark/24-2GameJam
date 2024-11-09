@@ -22,6 +22,33 @@ public class TalkManager : MonoBehaviour
     private bool isDialogue = false; //대화가 진행중인지 알려줄 변수
     private int count = 0; //대사가 얼마나 진행됐는지 알려줄 변수
 
+    // Update is called once per frame
+    void Update()
+    {
+        if (imgNamePanel == null)
+            return;
+
+        //spacebar 누를 때마다 대사가 진행되도록. 
+        if (isDialogue) //활성화가 되었을 때만 대사가 진행되도록
+        {
+            if (Input.anyKeyDown)
+            {
+                //대화의 끝을 알아야함.
+                if (count < nowDialogue.Length)
+                {
+                    NextDialogue(); //다음 대사가 진행됨
+                }
+                else
+                {
+                    ONOFF(false); //대사가 끝남
+                    GameManager.Instance.Player.isMoving = true;
+                }
+
+            }
+        }
+
+    }
+
     private void FixedUpdate()
     {
         // 다이얼로그 넣어주기
@@ -74,27 +101,5 @@ public class TalkManager : MonoBehaviour
     }
 
 
-    // Update is called once per frame
-    void Update()
-    {
-        //spacebar 누를 때마다 대사가 진행되도록. 
-        if (isDialogue) //활성화가 되었을 때만 대사가 진행되도록
-        {
-            if (Input.anyKeyDown)
-            {
-                //대화의 끝을 알아야함.
-                if (count < nowDialogue.Length)
-                {
-                    NextDialogue(); //다음 대사가 진행됨
-                }
-                else
-                {
-                    ONOFF(false); //대사가 끝남
-                    GameManager.Instance.Player.isMoving = true;
-                }
-
-            }
-        }
-
-    }
+    
 }

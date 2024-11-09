@@ -45,4 +45,13 @@ public class GameManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
+
+    private void Update()
+    {
+        if(Player == null)
+        {
+            GameObject player =  GameObject.FindWithTag("Player");
+            Player = player.GetComponent<Player>();
+        }
+    }
 }

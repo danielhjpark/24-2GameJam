@@ -9,6 +9,15 @@ public class PopUpUI : MonoBehaviour
     [SerializeField]
     public GameObject sprite;
 
+    private void Update()
+    {
+        if(sprite.activeSelf)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+                PopUp();
+        }
+    }
+
     public void PopUp()
     {
         sprite.SetActive(!sprite.activeSelf);

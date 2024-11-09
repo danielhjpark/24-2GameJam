@@ -11,7 +11,8 @@ public class RecordPlayer : MonoBehaviour
     [SerializeField] public GameObject Tengo_record;
 
     [SerializeField] public bool canGet = false;
-    [SerializeField] public GameObject PopUp;
+    [SerializeField] public GameObject popUp_panel;
+    [SerializeField] public PopUpUI popUpUI;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,10 +26,10 @@ public class RecordPlayer : MonoBehaviour
     {
         if (canGet)
         {
-            if (Input.GetKey(KeyCode.E) && !PopUp.activeSelf)
+            if (Input.GetKey(KeyCode.E) && !popUp_panel.activeSelf)
             {
                 Debug.Log("Get");
-                PopUpRecord();
+                popUpUI.PopUp();
             }
         }
     }
@@ -56,20 +57,6 @@ public class RecordPlayer : MonoBehaviour
             case 2:
                 Tengo_record.SetActive(true);
                 break;
-        }
-    }
-
-    public void PopUpRecord()
-    {
-        PopUp.SetActive(!PopUp.activeSelf);
-
-        if (PopUp.activeSelf)
-        {
-            GameManager.Instance.Player.isMoving = false;
-        }
-        else if (!PopUp.activeSelf)
-        {
-            GameManager.Instance.Player.isMoving = true;
         }
     }
 }
