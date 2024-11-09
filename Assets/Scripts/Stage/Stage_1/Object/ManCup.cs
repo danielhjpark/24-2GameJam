@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ManCup : MonoBehaviour
@@ -7,6 +8,7 @@ public class ManCup : MonoBehaviour
     [SerializeField] public bool hasHotWater = false;
     [SerializeField] public CheckScript check;
     [SerializeField] public bool canGet = false;
+    [SerializeField] public PlaySound sound;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,6 +26,7 @@ public class ManCup : MonoBehaviour
             {
                 Debug.Log("Get");
                 check.Clear();
+                sound.Play();
                 Destroy(this);
             }
         }

@@ -6,6 +6,7 @@ public class Kettle : MonoBehaviour
 {
     [SerializeField] ManCup mancup;
     [SerializeField] public bool canGet = false;
+    [SerializeField] private PlaySound soundPlay;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,6 +24,7 @@ public class Kettle : MonoBehaviour
             {
                 Debug.Log("Get");
                 mancup.hasHotWater = true;
+                soundPlay.Play();
                 Destroy(this.gameObject);
             }
         }
