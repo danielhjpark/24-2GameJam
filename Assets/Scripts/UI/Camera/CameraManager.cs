@@ -58,7 +58,8 @@ public class CameraManager : MonoBehaviour
             nowTarget = clearCameratr;
             StartCoroutine(delay());
         }
-        else if(sceneDone == true)
+
+        if(GameManager.Instance.playMode == "black" && sceneDone == true)
         {
             nowTarget = playerTransform;
         }

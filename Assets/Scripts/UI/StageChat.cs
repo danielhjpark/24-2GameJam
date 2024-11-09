@@ -89,7 +89,7 @@ public class StageChat : MonoBehaviour
                     else
                     {
                         ONOFF(false); //대사가 끝남
-                        cameraManager.sceneDone = false;
+                        cameraManager.sceneDone = true;
                         GameManager.Instance.playMode = "black";
                         GameManager.Instance.Player.isMoving = true;
                         GameManager.Instance.Player.gameObject.SetActive(true);
