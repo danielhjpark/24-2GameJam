@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
     public MoveScene sceneManager;
 
+    public string playMode = "black";       // black Èæ¹é color ÄÃ·¯(¾È ¸ØÃã)
+
     [SerializeField]
     public Player Player;
 

@@ -10,8 +10,6 @@ public class SoundManager : MonoBehaviour
     private AudioClip changeClip;
     [SerializeField] 
     private AudioClip baseClip;
-    [SerializeField]
-    private CameraManager cameraManager;
 
     private void Start()
     {
@@ -20,20 +18,17 @@ public class SoundManager : MonoBehaviour
 
     private void Update()
     {
-        if(cameraManager.stageClear && audioSource.clip == changeClip)
-        {
-            ChangeSound(changeClip);
-        }
-        
-        if(cameraManager.sceneDone)
-        {
-            ChangeSound(baseClip);
-        }
     }
 
-    public void ChangeSound(AudioClip clip)
+    public void ChangeSound()
     {
-        audioSource.clip = clip;
+        audioSource.clip = changeClip;
+        audioSource.Play();
+    }
+
+    public void ReturnSound()
+    {
+        audioSource.clip = baseClip;
         audioSource.Play();
     }
 }
