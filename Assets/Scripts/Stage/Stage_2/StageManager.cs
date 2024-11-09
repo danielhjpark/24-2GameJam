@@ -27,7 +27,6 @@ public class StageManager : MonoBehaviour
                 check3 = true;
                 break;
         }
-
     }
 
     public void CheckAllList(string nextStage)
