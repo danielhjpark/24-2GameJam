@@ -10,6 +10,7 @@ public class PoketWatch : ItemBase
     public override void UseItem()
     {
         // 게임 클리어
+        Destroy(this.gameObject);
         Debug.Log("게임 클리어");
     }
 }

@@ -50,12 +50,15 @@ public class Stage3SubManager : MonoBehaviour
 
     private void Update()
     {
+        if (lastObject == null)
+            return;
         if (stageManager.check1&& stageManager.check2 && GoDialog == false)
         {
             GoDialog = true;
             cameraManager.stageClear = true;
             stageChat.ShowDialogue();
         }
+
         if (lastObject.activeSelf)
             return;
 

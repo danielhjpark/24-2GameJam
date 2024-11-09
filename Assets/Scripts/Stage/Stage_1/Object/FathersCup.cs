@@ -28,6 +28,7 @@ public class FathersCup : MonoBehaviour
                 this.transform.position = moveTransform.position;
                 check.Clear();
                 playSound.Play();
+                Destroy(this);
             }
         }
     }
