@@ -536,6 +536,7 @@ MonoBehaviour:
   isClear: 0
   panel: {fileID: 2093531785}
   child: {fileID: 0}
+  popUpUI: {fileID: 1525937352}
 --- !u!1 &281070090
 GameObject:
   m_ObjectHideFlags: 0
