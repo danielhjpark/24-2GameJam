@@ -56,7 +56,6 @@ public class Stage3SubManager : MonoBehaviour
         {
             GoDialog = true;
             cameraManager.stageClear = true;
-            stageChat.ShowDialogue();
         }
 
         if (lastObject.activeSelf)
