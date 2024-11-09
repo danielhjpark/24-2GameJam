@@ -10,7 +10,6 @@ public class GetItemBase : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("µé¾î¿È?");
         if (collision.tag == "Player")
         {
             canGet = true;
