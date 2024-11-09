@@ -4724,6 +4724,7 @@ MonoBehaviour:
   isClear: 0
   bools: 000000
   popUpUI: {fileID: 1965513520}
+  destroyObject: {fileID: 390779579}
 --- !u!114 &2136917917
 MonoBehaviour:
   m_ObjectHideFlags: 0
