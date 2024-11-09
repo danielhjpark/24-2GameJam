@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     private float MoveSpeed = 10.0f;
 
     Rigidbody2D rigid;
+    Animator animator;
 
     private SpriteRenderer playerSpriteRenderer;
 
@@ -22,10 +23,7 @@ public class Player : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
-    }
-
-    private void Update()
-    {
+        animator = gameObject.GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -39,17 +37,16 @@ public class Player : MonoBehaviour
     void Move()
     {
         Vector3 moveVelocity = Vector3.zero;
-
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
             moveVelocity += Vector3.left;
-            playerSpriteRenderer.flipX = false; //플레이어 스프라이트 반전
+            playerSpriteRenderer.flipX = true; //플레이어 스프라이트 반전
         }
 
         else if (Input.GetAxisRaw("Horizontal") > 0)
         {
             moveVelocity += Vector3.right;
-            playerSpriteRenderer.flipX = true;//플레이어 스프라이트 반전
+            playerSpriteRenderer.flipX = false;//플레이어 스프라이트 반전
         }
 
         if(Input.GetAxisRaw("Vertical") < 0)
@@ -59,6 +56,15 @@ public class Player : MonoBehaviour
         else if(Input.GetAxisRaw("Vertical") > 0)
         {
             moveVelocity += Vector3.up;
+        }
+
+        if(moveVelocity != Vector3.zero)
+        {
+            animator.SetBool("Walk", true);
+        }
+        else
+        {
+            animator.SetBool("Walk", false);
         }
 
         transform.position += moveVelocity * MoveSpeed * Time.deltaTime;
