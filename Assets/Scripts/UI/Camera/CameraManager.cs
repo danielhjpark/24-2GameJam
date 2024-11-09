@@ -64,7 +64,6 @@ public class CameraManager : MonoBehaviour
         }
 
         LimitCameraArea();
-        
     }
 
     IEnumerator delay()
