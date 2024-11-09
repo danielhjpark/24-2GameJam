@@ -27,6 +27,9 @@ public class StageChat : MonoBehaviour
     [SerializeField]
     private GameObject bindPanel;
 
+    [SerializeField]
+    private bool canTravel = false;
+
     private bool isDialogue = false; //대화가 진행중인지 알려줄 변수
     private int count = 0; //대사가 얼마나 진행됐는지 알려줄 변수
 
@@ -92,9 +95,16 @@ public class StageChat : MonoBehaviour
                         GameManager.Instance.Player.gameObject.SetActive(true);
                         soundManager.ReturnSound();
 
-                        SceneManager.LoadScene(NextSceneName);
+                        canTravel = true;
                     }
                 }
+            }
+        }
+        if(canTravel)
+        {
+            if(Input.GetKeyDown(KeyCode.V))
+            {
+                SceneManager.LoadScene(NextSceneName);
             }
         }
     }

@@ -42,7 +42,7 @@ public class EndingChat : MonoBehaviour
     public void ShowDialogue()
     {
         ONOFF(true); //대화가 시작됨
-        GameManager.Instance.Player.isMoving = false;
+        //GameManager.Instance.Player.isMoving = false;
 
         count = 0;
         NextDialogue(); //호출되자마자 대사가 진행될 수 있도록 
@@ -69,28 +69,26 @@ public class EndingChat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cameraManager.stageClear)
+        //spacebar 누를 때마다 대사가 진행되도록. 
+        if (isDialogue) //활성화가 되었을 때만 대사가 진행되도록
         {
-            //spacebar 누를 때마다 대사가 진행되도록. 
-            if (isDialogue) //활성화가 되었을 때만 대사가 진행되도록
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (Input.GetKeyDown(KeyCode.Space))
+                //대화의 끝을 알아야함.
+                if (count < dialogue.Length)
                 {
-                    //대화의 끝을 알아야함.
-                    if (count < dialogue.Length)
-                    {
-                        NextDialogue(); //다음 대사가 진행됨
-                    }
-                    else
-                    {
-                        ONOFF(false); //대사가 끝남
-                        cameraManager.sceneDone = false;
-                        GameManager.Instance.Player.isMoving = true;
-                        GameManager.Instance.Player.gameObject.SetActive(true);
-                        SceneManager.LoadScene(NextSceneName);
-                    }
+                    NextDialogue(); //다음 대사가 진행됨
+                }
+                else
+                {
+                    ONOFF(false); //대사가 끝남
+                    //cameraManager.sceneDone = false;
+                    //GameManager.Instance.Player.isMoving = true;
+                    //GameManager.Instance.Player.gameObject.SetActive(true);
+                    //SceneManager.LoadScene(NextSceneName);
                 }
             }
         }
+
     }
 }
