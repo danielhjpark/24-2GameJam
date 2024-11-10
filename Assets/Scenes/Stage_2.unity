@@ -172,11 +172,10 @@ MonoBehaviour:
   imgTextPanel: {fileID: 1470489963}
   imgNamePanel: {fileID: 1470489966}
   NextSceneName: Stage_3
-  bindPanel: {fileID: 0}
+  bindPanel: {fileID: 449281625}
   portrainImg: {fileID: 79072071}
   leftinImg: {fileID: 826240248}
   nullImage: {fileID: 21300000, guid: c258ce095922afa46a6a09fcd4da1aeb, type: 3}
-  ImagePanel: {fileID: 0}
   changeNote: {fileID: 416252125}
   canTravel: 0
   dialogue:
@@ -1280,6 +1279,11 @@ Rigidbody2D:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5855480450347703809, guid: 06d2482670e58fb41845d614bb622750, type: 3}
   m_PrefabInstance: {fileID: 419696826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &449281625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8812765882213439410, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+  m_PrefabInstance: {fileID: 1470489961}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &460467421
 GameObject:

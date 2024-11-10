@@ -34,8 +34,6 @@ public class StageChat : MonoBehaviour
     public Image leftinImg;
     [SerializeField]
     public Sprite nullImage;
-    [SerializeField]
-    public GameObject ImagePanel;
 
     [SerializeField]
     private ChangeNote changeNote;
