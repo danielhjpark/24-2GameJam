@@ -597,7 +597,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: lAST TIME
+  m_text: 'lAST TIME
+
+    -END-'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 57b6abc767f62d645906fa6fd32ba3d4, type: 2}
   m_sharedMaterial: {fileID: 8751352954612168736, guid: 57b6abc767f62d645906fa6fd32ba3d4, type: 2}
