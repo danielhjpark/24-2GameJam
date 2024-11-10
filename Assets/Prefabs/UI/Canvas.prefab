@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 7910861639713703346}
   - component: {fileID: 503417898210105927}
   - component: {fileID: 2313185067629982017}
+  - component: {fileID: 2828317576240052078}
   m_Layer: 5
   m_Name: PopUp
   m_TagString: Untagged
@@ -421,6 +422,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2828317576240052078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4286713721524212310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a2b052618dd224e82672586c951c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BeforeImg: {fileID: 0}
+  AfterImg: {fileID: 0}
+  ClearTalk: 0
 --- !u!1 &5059312691438640998
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,6 +606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1741280569479879539}
   openAni: 0
+  isPlaying: 0
 --- !u!1 &5618437060072680618
 GameObject:
   m_ObjectHideFlags: 0
