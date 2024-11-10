@@ -2526,21 +2526,26 @@ MonoBehaviour:
   imgNamePanel: {fileID: 113093276}
   NextSceneName: Stage_2
   bindPanel: {fileID: 1389094086}
+  portrainImg: {fileID: 1650887983}
   changeNote: {fileID: 2012401906}
   canTravel: 0
   dialogue:
   - dialogue: "\uC790\uAE30 \uC88B\uC544\uD558\uB294 \uC7AC\uC988\uB124? \uC624\uB298\uB530\uB77C
       \uB4E3\uAE30 \uC88B\uB2E4.\r\n"
     name: "\uB0A8\uC790"
+    cg: {fileID: 21300000, guid: f8c0b4e6ce34d0243801383029c596f3, type: 3}
   - dialogue: "\uC5B4\uBA38? \uD3C9\uC18C\uC5D4 \uB4E4\uC73C\uB77C\uACE0 \uD574\uB3C4
       \uC548\uB4E3\uB354\uB2C8 \uC624\uB298\uC740 \uBB34\uC2A8 \uBC14\uB78C\uC774
       \uBD88\uC740\uAC70\uC57C?\r\n"
     name: "\uC5EC\uC790"
+    cg: {fileID: 21300000, guid: fd3f3ceba3f8c0d44839527981c6b1c7, type: 3}
   - dialogue: "\uADF8\uB9CC\uD07C \uC624\uB298 \uAE30\uBD84\uC774 \uC88B\uB2E4\uB294\uAC70\uC9C0.\r\n"
     name: "\uB0A8\uC790"
+    cg: {fileID: 21300000, guid: 9ba8755933a0ad145897e7220e0dbd1d, type: 3}
   - dialogue: "\uBB50\uC57C \uC2F1\uAC81\uAC8C~ \uADF8\uB098\uC800\uB098 \uC790\uAE30,
       \uB4E4\uC5B4\uBD10. \uC5B4\uC81C \uBB34\uC2A8\uC77C\uC774 \uC788\uC5C8\uB0D0\uBA74\u2026.\r\n"
     name: "\uC5EC\uC790"
+    cg: {fileID: 0}
   cameraManager: {fileID: 1473903237}
   soundManager: {fileID: 1481019381}
 --- !u!1 &822802061
@@ -4971,6 +4976,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1650887983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5981807916358077642, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+  m_PrefabInstance: {fileID: 566925877}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1684496924 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4675200059956627980, guid: 06d2482670e58fb41845d614bb622750, type: 3}

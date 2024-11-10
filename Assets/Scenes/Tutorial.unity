@@ -171,41 +171,51 @@ MonoBehaviour:
   txt_NameDialogue: {fileID: 1740665741}
   imgTextPanel: {fileID: 1192668959}
   imgNamePanel: {fileID: 999538281}
+  portrainImg: {fileID: 991153370}
   dialogue:
   - dialogue: "\uC6B0\uB9AC \uC544\uBE60\uB294 2\uB144\uC804 \uBCD1\uC73C\uB85C \uC138\uC0C1\uC744
       \uB5A0\uB098\uC168\uB2E4.\r"
     name: "\uC18C\uB140"
+    cg: {fileID: 21300000, guid: f8c0b4e6ce34d0243801383029c596f3, type: 3}
   - dialogue: "\uC544\uBE60\uB294 \uC8FD\uAE30 \uC804 \uB098\uC5D0\uAC8C \uB098\uB97C
       \uAC70\uB450\uC5B4 \uC8FC\uC2E0 \uB0A8\uC791\uB2D8\uAED8 \uD56D\uC0C1 \uAC10\uC0AC\uD55C
       \uB9C8\uC74C\uC744 \uAC00\uC9C0\uBA70 \uC0B4\uC544\uAC00\uB77C\uACE0 \uD558\uC2DC\uACE0\uB294
       \uC790\uC2E0\uC758 \uC77C\uAE30\uC7A5\uACFC \uD68C\uC911\uC2DC\uACC4\uB97C
       \uB0A8\uAE30\uC168\uB2E4.\r"
     name: "\uC18C\uB140"
+    cg: {fileID: 21300000, guid: 9ba8755933a0ad145897e7220e0dbd1d, type: 3}
   - dialogue: "\uC9C0\uB09C 2\uB144 \uB3D9\uC548 \uC544\uBE60\uC758 \uC77C\uAE30\uC7A5\uC744
       \uD3B4\uBCFC \uC6A9\uAE30\uAC00 \uB098\uC9C0 \uC54A\uC544 \uADF8\uB300\uB85C
       \uB450\uC5C8\uB294\uB370,\n\uC624\uB298 \uC77C\uAE30\uB97C \uC5F4\uC5B4 \uBCFC
       \uC0DD\uAC01\uC774\uB2E4.\r"
     name: "\uC18C\uB140"
+    cg: {fileID: 21300000, guid: fd3f3ceba3f8c0d44839527981c6b1c7, type: 3}
   - dialogue: "\uC751? \uC774\uAC8C \uBB50\uC9C0?\r"
     name: "\uC18C\uB140"
+    cg: {fileID: 0}
   - dialogue: "\uC124\uBA85\uC11C?\r"
     name: "\uC18C\uB140"
+    cg: {fileID: 0}
   - dialogue: "\uC774 \uC2DC\uACC4\uB294 \uACFC\uAC70\uB85C\uC758 \uC774\uB3D9\uC744
       \uAC00\uB2A5\uD558\uAC8C \uD558\uB294 \uD2B9\uBCC4\uD55C \uC2DC\uACC4\uC785\uB2C8\uB2E4."
     name: "\uC124\uBA85\uC11C"
+    cg: {fileID: 0}
   - dialogue: "\uC774\uB984 \uC5C6\uB294 \uC7A5\uC778\uC5D0 \uC758\uD574 \uB9CC\uB4E4\uC5B4\uC84C\uC73C\uBA70,\uD639\uC2DC
       \uBAA8\uB97C \uC0AC\uD0DC\uC5D0 \uB300\uBE44\uD574 \uC774 \uC124\uBA85\uC11C\uB97C
       \uB0A8\uAE30\uB2C8,\n\uC2E0\uC911\uD558\uAC8C \uC0AC\uC6A9\uD558\uC2DC\uAE30
       \uBC14\uB78D\uB2C8\uB2E4."
     name: "\uC124\uBA85\uC11C"
+    cg: {fileID: 0}
   - dialogue: "\uC8FC\uC758\uC0AC\uD56D\r\n\uACFC\uAC70\uB85C \uB3CC\uC544\uAC00
       \uBB34\uC5B8\uAC00\uB97C \uBC14\uAFB8\uB294 \uC77C\uC740 \uCD94\uCC9C\uD558\uC9C0
       \uC54A\uC2B5\uB2C8\uB2E4.\n\uBCF8\uC778\uC774 \uC6D0\uD558\uC9C0 \uC54A\uB294
       \uBC29\uD5A5\uC73C\uB85C \uBBF8\uB798\uAC00 \uBC14\uB014 \uC218\uB3C4 \uC788\uC2B5\uB2C8\uB2E4."
     name: "\uC124\uBA85\uC11C"
+    cg: {fileID: 0}
   - dialogue: "\uC2DC\uACC4\uAC00 \uBD80\uB514 \uC88B\uC740 \uC77C\uC5D0\uB9CC \uC4F0\uC774\uAE30
       \uBC14\uB77C\uBA70, \uC774 \uC124\uBA85\uC11C\uB97C \uB3D9\uBD09\uD569\uB2C8\uB2E4."
     name: "\uC124\uBA85\uC11C"
+    cg: {fileID: 0}
   Book: {fileID: 1009326006}
   OpenBook: {fileID: 1250274831}
   isChenge: 0
@@ -837,7 +847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2316202473025140996, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4286713721524212310, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_IsActive
@@ -857,7 +867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7796985704898877425, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8206073045315840043, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -989,6 +999,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856832035}
   m_CullTransparentMesh: 1
+--- !u!114 &991153370 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5981807916358077642, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+  m_PrefabInstance: {fileID: 790522521}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &999538281 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2316202473025140996, guid: 7c310bc19d72998439a7082019911c0f, type: 3}

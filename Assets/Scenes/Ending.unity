@@ -781,6 +781,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06d2482670e58fb41845d614bb622750, type: 3}
+--- !u!114 &709959669 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5981807916358077642, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+  m_PrefabInstance: {fileID: 1180463736}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &764128544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,24 +1470,30 @@ MonoBehaviour:
   imgTextPanel: {fileID: 1180463739}
   imgNamePanel: {fileID: 1180463738}
   NextSceneName: Credits
+  portrainImg: {fileID: 709959669}
   dialogue:
   - dialogue: "\uC544\uBE60\uB3C4 \uB098\uC640 \uAC19\uC558\uAD6C\uB098\u2026\uC5C4\uB9C8\uB97C
       \uADF8\uB9AC\uC6CC \uD588\uAD6C\uB098\u2026\r"
     name: "\uC18C\uB140"
+    cg: {fileID: 0}
   - dialogue: "\uD558\uC9C0\uB9CC \uBC14\uAFC0 \uC218 \uC5C6\uC5C8\uAD6C\uB098. \uC5C4\uB9C8\uC758
       \uC8FD\uC74C\uC744.\r\n"
     name: "\uC18C\uB140"
+    cg: {fileID: 0}
   - dialogue: "\uC544\uBE60\uB294 \uBBF8\uB798\uC758 \uB098\uC5D0\uAC8C \uB9D0\uD558\uACE0
       \uC2F6\uC5C8\uB358 \uAC70\uACA0\uC9C0. \uB2F9\uC2E0\uC774 \uC8FD\uC5B4\uC11C
       \uB108\uB294 \uC790\uC2E0\uACFC \uAC19\uC740 \uC2E4\uC218\uB97C \uBC18\uBCF5\uD558\uC9C0
       \uB9D0\uB77C\uACE0.\r"
     name: "\uC18C\uB140"
+    cg: {fileID: 0}
   - dialogue: "\uB9CC\uB0A8\uC740 \uC9E7\uACE0, \uC774\uBCC4\uC740 \uAE38\uC9C0\uB9CC
       \uC0C8\uB85C\uC6B4 \uB9CC\uB0A8\uC774 \uCC3E\uC544\uC62C \uAC70\uB77C\uB294
       \uAC78 \uC54C\uAC8C \uD574\uC8FC\uACE0 \uC2F6\uC5C8\uB358 \uAC70\uC57C.\r"
     name: "\uC18C\uB140"
+    cg: {fileID: 0}
   - dialogue: "\uACE0\uB9C8\uC6CC \uC544\uBE60. \uC798 \uAC00.\r"
     name: "\uC18C\uB140"
+    cg: {fileID: 0}
   cameraManager: {fileID: 0}
 --- !u!4 &1671488937
 Transform:

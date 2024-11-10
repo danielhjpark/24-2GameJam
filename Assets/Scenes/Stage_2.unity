@@ -173,51 +173,66 @@ MonoBehaviour:
   imgNamePanel: {fileID: 1470489966}
   NextSceneName: Stage_3
   bindPanel: {fileID: 740451337}
+  portrainImg: {fileID: 79072071}
   changeNote: {fileID: 416252125}
   canTravel: 0
   dialogue:
   - dialogue: "\uC74C\uC2DD\uC740 \uC785\uC5D0 \uB9DE\uC73C\uC138\uC694?\r\n"
     name: "\uC544\uBE60 "
+    cg: {fileID: 0}
   - dialogue: "\uB9DB\uC788\uB124. \uBD80\uC778\uC740 \uC5B4\uB5A4\uAC00?\r\n"
     name: "\uB0A8\uC791 "
+    cg: {fileID: 0}
   - dialogue: "\uC800\uB3C4 \uADF8\uB798\uC694. \uC694\uB9AC \uC19C\uC528\uAC00 \uC88B\uC740
       \uB370\uC694?\r\n"
     name: "\uB0A8\uC791 \uBD80\uC778 "
+    cg: {fileID: 0}
   - dialogue: "\uAC10\uC0AC\uD569\uB2C8\uB2E4. \uB0A8\uC791 \uBD80\uC778. \uBCC4
       \uAC70 \uC544\uB2CC \uC7AC\uC8FC\uC778\uAC78\uC694\u2026\r\n"
     name: "\uC5C4\uB9C8 "
+    cg: {fileID: 0}
   - dialogue: "\uC544\uB2C8\uC5D0\uC694. \uC774\uC815\uB3C4\uBA74 \uC6B0\uB9AC \uC9D1
       \uC694\uB9AC\uC0AC\uD55C\uD14C \uBC30\uC6B0\uB77C\uACE0 \uD558\uACE0 \uC2F6\uC744
       \uC815\uB3C4\uC5D0\uC694.\r"
     name: "\uB0A8\uC791 \uBD80\uC778"
+    cg: {fileID: 0}
   - dialogue: "\uCE6D\uCC2C \uAC10\uC0AC\uD569\uB2C8\uB2E4. \uC560\uAE30 \uC5C4\uB9C8\uAC00
       \uC88B\uC544\uC11C \uC548\uC808\uBD80\uC808\uD558\uB124\uC694.\r"
     name: "\uC544\uBE60 "
+    cg: {fileID: 0}
   - dialogue: "\uB2F9\uC2E0\uC740 \uC4F8\uB370 \uC5C6\uB294 \uC18C\uB9B4! \uC8C4\uC1A1\uD574\uC694.
       \uB0A8\uD3B8\uC774 \uC8FC\uCC45\uC774 \uC2EC\uD574\uC11C\u2026.\r"
     name: "\uC5C4\uB9C8 "
+    cg: {fileID: 0}
   - dialogue: "\uD558\uD558\uD558. \uC544 \uCC38! \uC5BC\uB9C8 \uC804\uC5D0 \uC2E0\uAE30\uD55C
       \uBB38\uC591\uC774 \uC0C8\uACA8\uC9C4 \uD68C\uC911 \uC2DC\uACC4\uB97C \uC5BB\uC5C8\uB294\uB370,
       \uC790\uB124\uAC00 \uD55C\uBC88 \uBD10\uC8FC\uACA0\uB098?\r"
     name: "\uB0A8\uC791"
+    cg: {fileID: 0}
   - dialogue: "\uD760\u2026\uC774\uAC74 \uCC98\uC74C \uBCF4\uB294 \uBB38\uC591\uC774\uAD70\uC694.
       \uC5B4\uB5A4 \uBB38\uC591\uC778\uC9C0\uB294 \uBAB0\uB77C\uB3C4 \uC2DC\uACC4
       \uC790\uCCB4\uB294 \uAD49\uC7A5\uD788 \uC815\uAD50\uD558\uAC8C \uB9CC\uB4E4\uC5B4\uC84C\uAD70\uC694.
       \uB418\uD314\uBA74 \uBE44\uC2F8\uAC8C \uBC1B\uC744 \uC218 \uC788\uC73C\uC2E4
       \uAC81\uB2C8\uB2E4.\r"
     name: "\uC544\uBE60"
+    cg: {fileID: 0}
   - dialogue: "\uADF8\uB807\uAD70. \uADF8\uB7FC \uC790\uB124\uAC00 \uAC16\uAC8C.\r"
     name: "\uB0A8\uC791"
+    cg: {fileID: 0}
   - dialogue: "\uB124? \uC774 \uADC0\uD55C \uAC83\uC744 \uC5B4\uCC0C \uC81C\uAC00\u2026.\r"
     name: "\uC544\uBE60"
+    cg: {fileID: 0}
   - dialogue: "\uB538 \uC544\uC774 \uCD9C\uC0B0 \uC120\uBB3C\uC774\uB77C\uACE0 \uC0DD\uAC01\uD558\uAC8C.\r"
     name: "\uB0A8\uC791"
+    cg: {fileID: 0}
   - dialogue: "\uAC10\uC0AC\uD569\uB2C8\uB2E4. \uB0A8\uC791\uB2D8. \uC774 \uC740\uD61C
       \uC78A\uC9C0 \uC54A\uACA0\uC2B5\uB2C8\uB2E4. \uB0A8\uC791\uB2D8\uC758 \uC2DC\uACC4\uB294
       \uC81C\uAC00 \uD3C9\uC0DD \uB9CC\uB4E4\uC5B4 \uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4.\r"
     name: "\uC544\uBE60"
+    cg: {fileID: 0}
   - dialogue: "\uD5C8\uD5C8\uD5C8. \uC6B0\uB9AC\uB3C4 \uC790\uB124 \uBC16\uC5D0 \uC5C6\uB2E4\uB124.\r"
     name: "\uB0A8\uC791"
+    cg: {fileID: 0}
   cameraManager: {fileID: 1175505339}
   soundManager: {fileID: 1464862717}
 --- !u!1 &75848458
@@ -309,6 +324,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75848458}
   m_CullTransparentMesh: 1
+--- !u!114 &79072071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5981807916358077642, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+  m_PrefabInstance: {fileID: 1470489961}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &188494294
 GameObject:
   m_ObjectHideFlags: 0

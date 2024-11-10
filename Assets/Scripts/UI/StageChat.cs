@@ -10,6 +10,7 @@ public class Dialogue1
     [TextArea]//한줄 말고 여러 줄 쓸 수 있게 해줌
     public string dialogue;
     public string name;
+    public Sprite cg;
 
 }
 public class StageChat : MonoBehaviour
@@ -26,6 +27,9 @@ public class StageChat : MonoBehaviour
     private string NextSceneName;
     [SerializeField]
     private GameObject bindPanel;
+
+    [SerializeField]
+    public Image portrainImg;
 
     [SerializeField]
     private ChangeNote changeNote;
@@ -60,6 +64,7 @@ public class StageChat : MonoBehaviour
         imgTextPanel.gameObject.SetActive(_flag);
         imgNamePanel.gameObject.SetActive(_flag);
         txt_NameDialogue.gameObject.SetActive(_flag);
+        portrainImg.gameObject.SetActive(_flag);
         txt_Dialogue.gameObject.SetActive(_flag);
         bindPanel.gameObject.SetActive(_flag);
         isDialogue = _flag;
@@ -70,6 +75,7 @@ public class StageChat : MonoBehaviour
         //첫번째 대사와 첫번째 cg부터 계속 다음 cg로 진행되면서 화면에 보이게 된다. 
         txt_Dialogue.text = dialogue[count].dialogue;
         txt_NameDialogue.text = dialogue[count].name;
+        portrainImg.sprite = dialogue[count].cg;
         count++;
 
     }

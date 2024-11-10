@@ -11,6 +11,7 @@ public class Dialogue2
     [TextArea]//한줄 말고 여러 줄 쓸 수 있게 해줌
     public string dialogue;
     public string name;
+    public Sprite cg;
 
 }
 public class EndingChat : MonoBehaviour
@@ -25,6 +26,9 @@ public class EndingChat : MonoBehaviour
     private GameObject imgNamePanel;
     [SerializeField]
     private string NextSceneName;
+
+    [SerializeField]
+    public Image portrainImg;
 
     private bool isDialogue = false; //대화가 진행중인지 알려줄 변수
     private int count = 0; //대사가 얼마나 진행됐는지 알려줄 변수
@@ -54,6 +58,7 @@ public class EndingChat : MonoBehaviour
         imgNamePanel.gameObject.SetActive(_flag);
         txt_NameDialogue.gameObject.SetActive(_flag);
         txt_Dialogue.gameObject.SetActive(_flag);
+        portrainImg.gameObject.SetActive(_flag);
         isDialogue = _flag;
     }
 
@@ -62,6 +67,7 @@ public class EndingChat : MonoBehaviour
         //첫번째 대사와 첫번째 cg부터 계속 다음 cg로 진행되면서 화면에 보이게 된다. 
         txt_Dialogue.text = dialogue[count].dialogue;
         txt_NameDialogue.text = dialogue[count].name;
+        portrainImg.sprite = dialogue[count].cg;
         count++;
 
     }
