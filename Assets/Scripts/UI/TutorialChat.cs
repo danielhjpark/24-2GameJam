@@ -70,7 +70,7 @@ public class TutorialChat : MonoBehaviour
         portrainImg.sprite = dialogue[count].cg;
         txt_NameDialogue.text = dialogue[count].name;
         count++; //다음 대사와 cg가 나오도록 
-        if(count == 5)//해당 다이얼로그일 때 
+        if(count == 4)//해당 다이얼로그일 때 
         {
             Book.gameObject.SetActive(false);
             OpenBook.gameObject.SetActive(true);
