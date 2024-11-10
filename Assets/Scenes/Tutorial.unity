@@ -887,19 +887,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8206073045315840043, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1499.9678
+      value: 1450
       objectReference: {fileID: 0}
     - target: {fileID: 8206073045315840043, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 183.2762
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 8206073045315840043, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000022888
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8206073045315840043, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0000059605
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 8940034501758482842, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_FontData.m_Alignment
