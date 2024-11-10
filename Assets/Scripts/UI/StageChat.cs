@@ -76,6 +76,7 @@ public class StageChat : MonoBehaviour
         txt_Dialogue.text = dialogue[count].dialogue;
         txt_NameDialogue.text = dialogue[count].name;
         portrainImg.sprite = dialogue[count].cg;
+
         count++;
 
     }

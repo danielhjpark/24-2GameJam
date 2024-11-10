@@ -2530,22 +2530,18 @@ MonoBehaviour:
   changeNote: {fileID: 2012401906}
   canTravel: 0
   dialogue:
-  - dialogue: "\uC790\uAE30 \uC88B\uC544\uD558\uB294 \uC7AC\uC988\uB124? \uC624\uB298\uB530\uB77C
-      \uB4E3\uAE30 \uC88B\uB2E4.\r\n"
-    name: "\uB0A8\uC790"
-    cg: {fileID: 21300000, guid: f8c0b4e6ce34d0243801383029c596f3, type: 3}
-  - dialogue: "\uC5B4\uBA38? \uD3C9\uC18C\uC5D4 \uB4E4\uC73C\uB77C\uACE0 \uD574\uB3C4
-      \uC548\uB4E3\uB354\uB2C8 \uC624\uB298\uC740 \uBB34\uC2A8 \uBC14\uB78C\uC774
-      \uBD88\uC740\uAC70\uC57C?\r\n"
+  - dialogue: "\uC544\uAE4C \uB9D0\uD55C \uACE1\uC774 \uC774\uAC70\uC5D0\uC694! \uC5B4\uB54C\uC694?
+      \uAD1C\uCC2E\uC740 \uAC83 \uAC19\uC8E0?\r\n"
     name: "\uC5EC\uC790"
-    cg: {fileID: 21300000, guid: fd3f3ceba3f8c0d44839527981c6b1c7, type: 3}
-  - dialogue: "\uADF8\uB9CC\uD07C \uC624\uB298 \uAE30\uBD84\uC774 \uC88B\uB2E4\uB294\uAC70\uC9C0.\r\n"
+    cg: {fileID: 21300000, guid: c258ce095922afa46a6a09fcd4da1aeb, type: 3}
+  - dialogue: "\uD655\uC2E4\uD788 \uBC29\uAE08 \uACE1\uBCF4\uB2E4 \uC88B\uB124\uC694.
+      \uB610, \uCD94\uCC9C\uD574\uC904 \uACE1 \uC788\uC5B4\uC694?\r"
     name: "\uB0A8\uC790"
+    cg: {fileID: 21300000, guid: 269e5e850520cb94c8001ef35fb62e83, type: 3}
+  - dialogue: "\uADF8\uB7FC\uC694! \uB8E8\uC774 \uC554\uC2A4\uD2B8\uB871\uBD80\uD130
+      \uCD94\uCC9C \uB4DC\uB9AC\uC790\uBA74\u2026\r"
+    name: "\uC5EC\uC790"
     cg: {fileID: 21300000, guid: 9ba8755933a0ad145897e7220e0dbd1d, type: 3}
-  - dialogue: "\uBB50\uC57C \uC2F1\uAC81\uAC8C~ \uADF8\uB098\uC800\uB098 \uC790\uAE30,
-      \uB4E4\uC5B4\uBD10. \uC5B4\uC81C \uBB34\uC2A8\uC77C\uC774 \uC788\uC5C8\uB0D0\uBA74\u2026.\r\n"
-    name: "\uC5EC\uC790"
-    cg: {fileID: 0}
   cameraManager: {fileID: 1473903237}
   soundManager: {fileID: 1481019381}
 --- !u!1 &822802061

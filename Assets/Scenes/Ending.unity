@@ -1472,28 +1472,21 @@ MonoBehaviour:
   NextSceneName: Credits
   portrainImg: {fileID: 709959669}
   dialogue:
-  - dialogue: "\uC544\uBE60\uB3C4 \uB098\uC640 \uAC19\uC558\uAD6C\uB098\u2026\uC5C4\uB9C8\uB97C
-      \uADF8\uB9AC\uC6CC \uD588\uAD6C\uB098\u2026\r"
+  - dialogue: "\uC544\uBE60\uB294\u2026\r"
     name: "\uC18C\uB140"
-    cg: {fileID: 0}
-  - dialogue: "\uD558\uC9C0\uB9CC \uBC14\uAFC0 \uC218 \uC5C6\uC5C8\uAD6C\uB098. \uC5C4\uB9C8\uC758
-      \uC8FD\uC74C\uC744.\r\n"
+    cg: {fileID: 21300000, guid: e8f686fc1929ee64e90a0c38873ad4e5, type: 3}
+  - dialogue: "\u2026.\r\n"
     name: "\uC18C\uB140"
-    cg: {fileID: 0}
-  - dialogue: "\uC544\uBE60\uB294 \uBBF8\uB798\uC758 \uB098\uC5D0\uAC8C \uB9D0\uD558\uACE0
-      \uC2F6\uC5C8\uB358 \uAC70\uACA0\uC9C0. \uB2F9\uC2E0\uC774 \uC8FD\uC5B4\uC11C
-      \uB108\uB294 \uC790\uC2E0\uACFC \uAC19\uC740 \uC2E4\uC218\uB97C \uBC18\uBCF5\uD558\uC9C0
-      \uB9D0\uB77C\uACE0.\r"
+    cg: {fileID: 21300000, guid: e8f686fc1929ee64e90a0c38873ad4e5, type: 3}
+  - dialogue: "\uC5C4\uB9C8\uB3C4\u2026 \uC544\uBE60\uB3C4\u2026\r\n"
     name: "\uC18C\uB140"
-    cg: {fileID: 0}
-  - dialogue: "\uB9CC\uB0A8\uC740 \uC9E7\uACE0, \uC774\uBCC4\uC740 \uAE38\uC9C0\uB9CC
-      \uC0C8\uB85C\uC6B4 \uB9CC\uB0A8\uC774 \uCC3E\uC544\uC62C \uAC70\uB77C\uB294
-      \uAC78 \uC54C\uAC8C \uD574\uC8FC\uACE0 \uC2F6\uC5C8\uB358 \uAC70\uC57C.\r"
+    cg: {fileID: 21300000, guid: e8f686fc1929ee64e90a0c38873ad4e5, type: 3}
+  - dialogue: "\uB108\uBB34\u2026 \uC18C\uC911\uD55C \uCD94\uC5B5\uC774 \uB410\uC5B4\uC694..\r\n"
     name: "\uC18C\uB140"
-    cg: {fileID: 0}
-  - dialogue: "\uACE0\uB9C8\uC6CC \uC544\uBE60. \uC798 \uAC00.\r"
+    cg: {fileID: 21300000, guid: 19094a59ca430c74a90f8b0651333ade, type: 3}
+  - dialogue: "\uC5B8\uC81C\uB098\u2026 \uC0AC\uB791\uD574\uC694..!\r"
     name: "\uC18C\uB140"
-    cg: {fileID: 0}
+    cg: {fileID: 21300000, guid: 19094a59ca430c74a90f8b0651333ade, type: 3}
   cameraManager: {fileID: 0}
 --- !u!4 &1671488937
 Transform:
