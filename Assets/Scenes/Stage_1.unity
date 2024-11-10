@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 57143972}
   m_Layer: 0
   m_Name: kettle
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1192,7 +1192,7 @@ GameObject:
   - component: {fileID: 281070094}
   m_Layer: 0
   m_Name: Record(Cassic)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1339,7 +1339,7 @@ GameObject:
   - component: {fileID: 340465000}
   m_Layer: 0
   m_Name: Mugcup(man)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1549,7 +1549,7 @@ GameObject:
   - component: {fileID: 391714277}
   m_Layer: 0
   m_Name: Record(tengo)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1695,7 +1695,7 @@ GameObject:
   - component: {fileID: 400433469}
   m_Layer: 0
   m_Name: Record(Jazz)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2297,6 +2297,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3866669403892556671, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3866669403892556671, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ca8eac5f30b34294cac8329ea6aa0abe, type: 3}
     - target: {fileID: 4286713721524212310, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2345,6 +2353,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7352772382460768972, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 566925880}
     - target: {fileID: 7796985704898877425, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2366,6 +2378,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7010523513293880392, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2004757386}
+    - targetCorrespondingSourceObject: {fileID: 5059312691438640998, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 566925880}
     - targetCorrespondingSourceObject: {fileID: 7041959153273504474, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1108948855}
@@ -2375,6 +2390,32 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1996061594426582720, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
   m_PrefabInstance: {fileID: 566925877}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &566925879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5059312691438640998, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+  m_PrefabInstance: {fileID: 566925877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &566925880
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566925879}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a8ffdc316518db54cbb5fe2f162a7bcc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &621165660
 GameObject:
   m_ObjectHideFlags: 0
@@ -2808,7 +2849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5855480450347703809, guid: 06d2482670e58fb41845d614bb622750, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.34
+      value: -2.05
       objectReference: {fileID: 0}
     - target: {fileID: 5855480450347703809, guid: 06d2482670e58fb41845d614bb622750, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4021,7 +4062,7 @@ GameObject:
   - component: {fileID: 1382339977}
   m_Layer: 0
   m_Name: Mugcup(fathers)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4670,7 +4711,7 @@ GameObject:
   - component: {fileID: 1525937353}
   m_Layer: 0
   m_Name: RecorderPlayer
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

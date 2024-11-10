@@ -16,11 +16,15 @@ public class Player : MonoBehaviour
 
     public bool isMoving = true;
 
+    [SerializeField]
+    private UIClock uiClock;
+
     private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
         animator = gameObject.GetComponent<Animator>();
+        uiClock = GameObject.Find("Canvas/UPPanel/PopUpButton").GetComponent<UIClock>();
     }
     private void FixedUpdate()
     {
@@ -71,5 +75,19 @@ public class Player : MonoBehaviour
         Debug.Log(moveVelocity);
 
         transform.position += moveVelocity * MoveSpeed * Time.deltaTime;
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Object"))
+        {
+            uiClock.TriggerAnimation(true); // 정방향 애니메이션 트리거
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Object"))
+        {
+            uiClock.TriggerAnimation(false); // 역방향 애니메이션 트리거
+        }
     }
 }
