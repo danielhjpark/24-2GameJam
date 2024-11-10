@@ -2602,7 +2602,6 @@ MonoBehaviour:
   portrainImg: {fileID: 1650887983}
   leftinImg: {fileID: 566925881}
   nullImage: {fileID: 0}
-  ImagePanel: {fileID: 1933141719}
   changeNote: {fileID: 2012401906}
   canTravel: 0
   dialogue:
@@ -2947,7 +2946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8199484826710507250, guid: 06d2482670e58fb41845d614bb622750, type: 3}
       propertyPath: MoveSpeed
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5051,7 +5050,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5981807916358077642, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
   m_PrefabInstance: {fileID: 566925877}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933141719}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -5365,11 +5364,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1933141719 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5795405468505614328, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
-  m_PrefabInstance: {fileID: 566925877}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1967092027
 GameObject:
   m_ObjectHideFlags: 0
