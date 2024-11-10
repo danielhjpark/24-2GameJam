@@ -10,6 +10,9 @@ public class ManCup : MonoBehaviour
     [SerializeField] public bool canGet = false;
     [SerializeField] public PlaySound sound;
 
+    [SerializeField]
+    private Sprite SmokeSprite;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -26,6 +29,7 @@ public class ManCup : MonoBehaviour
             {
                 Debug.Log("Get");
                 check.Clear();
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = SmokeSprite;
                 sound.Play();
                 GameManager.Instance.Player.isMoving = false;
                 StartCoroutine(Stop());
