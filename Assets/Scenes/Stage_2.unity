@@ -173,6 +173,7 @@ MonoBehaviour:
   imgNamePanel: {fileID: 1470489966}
   NextSceneName: Stage_3
   bindPanel: {fileID: 740451337}
+  changeNote: {fileID: 416252125}
   canTravel: 0
   dialogue:
   - dialogue: "\uC74C\uC2DD\uC740 \uC785\uC5D0 \uB9DE\uC73C\uC138\uC694?\r\n"
@@ -1061,6 +1062,54 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.64, y: -0.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &416252124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 416252126}
+  - component: {fileID: 416252125}
+  m_Layer: 0
+  m_Name: ChangeNoteManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &416252125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416252124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0304d6509afec4ba6113dcd3292730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BeginImg: {fileID: 21300000, guid: f013ce62fdb55dd42a49bd6deb8b5401, type: 3}
+  AfterImg: {fileID: 21300000, guid: 9417d003eddeb554c893983914589f75, type: 3}
+  PopUpImg: {fileID: 925033827}
+  ClearTalk: 0
+--- !u!4 &416252126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416252124}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1004.96967, y: 489.06204, z: 4.675741}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2410,6 +2459,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &925033827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7041959153273504474, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+  m_PrefabInstance: {fileID: 1470489961}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &952668701
 GameObject:
   m_ObjectHideFlags: 0
@@ -3886,6 +3940,26 @@ PrefabInstance:
     - target: {fileID: 5141727767462970238, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989810642146164242, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989810642146164242, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f013ce62fdb55dd42a49bd6deb8b5401, type: 3}
+    - target: {fileID: 6989810642146164242, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989810642146164242, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6989810642146164242, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7010523513293880392, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
       propertyPath: m_Name
@@ -5511,3 +5585,4 @@ SceneRoots:
   - {fileID: 9569443}
   - {fileID: 1464862715}
   - {fileID: 1884443333}
+  - {fileID: 416252126}
