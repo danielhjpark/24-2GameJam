@@ -30,6 +30,9 @@ public class EndingChat : MonoBehaviour
     [SerializeField]
     public Image portrainImg;
 
+    [SerializeField]
+    private bool firstclick = false;
+
     private bool isDialogue = false; //대화가 진행중인지 알려줄 변수
     private int count = 0; //대사가 얼마나 진행됐는지 알려줄 변수
 
@@ -39,10 +42,6 @@ public class EndingChat : MonoBehaviour
     public CameraManager cameraManager;
 
 
-    private void Awake()
-    {
-        ShowDialogue();
-    }
     public void ShowDialogue()
     {
         ONOFF(true); //대화가 시작됨
@@ -75,6 +74,11 @@ public class EndingChat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Space) && firstclick == false)
+        {
+            ShowDialogue();
+            firstclick = true;
+        }
         //spacebar 누를 때마다 대사가 진행되도록. 
         if (isDialogue) //활성화가 되었을 때만 대사가 진행되도록
         {
@@ -88,18 +92,12 @@ public class EndingChat : MonoBehaviour
                 else
                 {
                     ONOFF(false); //대사가 끝남
-                    StartCoroutine(StopTime());
+                    SceneManager.LoadScene(NextSceneName);
                     //cameraManager.sceneDone = false;
                     //GameManager.Instance.Player.isMoving = true;
                     //GameManager.Instance.Player.gameObject.SetActive(true);
                 }
             }
         }
-    }
-
-    IEnumerator StopTime()
-    {
-        yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene(NextSceneName);
     }
 }
