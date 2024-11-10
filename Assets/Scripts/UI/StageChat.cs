@@ -82,14 +82,6 @@ public class StageChat : MonoBehaviour
         //첫번째 대사와 첫번째 cg부터 계속 다음 cg로 진행되면서 화면에 보이게 된다. 
         txt_Dialogue.text = dialogue[count].dialogue;
         txt_NameDialogue.text = dialogue[count].name;
-        if(dialogue[count].leftcg == null)
-        {
-            leftinImg.sprite = nullImage;
-        }
-        if(dialogue[count].cg == null)
-        {
-            portrainImg.sprite = nullImage;
-        }
         leftinImg.sprite = dialogue[count].leftcg;
         portrainImg.sprite = dialogue[count].cg;
 

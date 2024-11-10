@@ -2593,10 +2593,11 @@ MonoBehaviour:
   imgTextPanel: {fileID: 999136147}
   imgNamePanel: {fileID: 113093276}
   NextSceneName: Stage_2
-  bindPanel: {fileID: 1389094086}
+  bindPanel: {fileID: 0}
   portrainImg: {fileID: 1650887983}
   leftinImg: {fileID: 566925881}
   nullImage: {fileID: 0}
+  ImagePanel: {fileID: 0}
   changeNote: {fileID: 2012401906}
   canTravel: 0
   dialogue:
@@ -4237,11 +4238,6 @@ MonoBehaviour:
   check: {fileID: 1382339976}
   playSound: {fileID: 1289717516}
   canGet: 0
---- !u!1 &1389094086 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9102856171548736634, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
-  m_PrefabInstance: {fileID: 566925877}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1434801371
 GameObject:
   m_ObjectHideFlags: 0
@@ -5682,6 +5678,10 @@ PrefabInstance:
     - target: {fileID: 998661740706488727, guid: 59da9320dceabce46a4ff1634e2c2547, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027318433920670540, guid: 59da9320dceabce46a4ff1634e2c2547, type: 3}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5174203720572647776, guid: 59da9320dceabce46a4ff1634e2c2547, type: 3}
       propertyPath: changeClip
