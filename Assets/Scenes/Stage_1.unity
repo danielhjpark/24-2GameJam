@@ -5539,8 +5539,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e0304d6509afec4ba6113dcd3292730, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeginImg: {fileID: 21300000, guid: 0eb125c97373ba143bbd0ce7b8ddb461, type: 3}
-  AfterImg: {fileID: 21300000, guid: 8b8abbfdaff227e4cb68126bbf7dc9c4, type: 3}
+  BeginImg: {fileID: 21300000, guid: 16cf1b8559e14804f893dea668479a93, type: 3}
+  AfterImg: {fileID: 21300000, guid: a458b0cb53101224ca396199d5e4d262, type: 3}
   PopUpImg: {fileID: 1108948850}
   ClearTalk: 0
 --- !u!4 &2012401907
