@@ -5,15 +5,6 @@ using UnityEngine;
 using UnityEngine.UI;//Text field를 사용할 수 있도록 하는 header
 using UnityEngine.SceneManagement;
 
-[System.Serializable] //직접 만든 class에 접근할 수 있도록 해줌. 
-public class Dialogue2
-{
-    [TextArea]//한줄 말고 여러 줄 쓸 수 있게 해줌
-    public string dialogue;
-    public string name;
-    public Sprite cg;
-
-}
 public class EndingChat : MonoBehaviour
 {
     [SerializeField]
@@ -29,6 +20,8 @@ public class EndingChat : MonoBehaviour
 
     [SerializeField]
     public Image portrainImg;
+    [SerializeField]
+    public Image leftImg;
 
     [SerializeField]
     private bool firstclick = false;
@@ -58,6 +51,7 @@ public class EndingChat : MonoBehaviour
         txt_NameDialogue.gameObject.SetActive(_flag);
         txt_Dialogue.gameObject.SetActive(_flag);
         portrainImg.gameObject.SetActive(_flag);
+        leftImg.gameObject.SetActive(!_flag);
         isDialogue = _flag;
     }
 
@@ -67,6 +61,7 @@ public class EndingChat : MonoBehaviour
         txt_Dialogue.text = dialogue[count].dialogue;
         txt_NameDialogue.text = dialogue[count].name;
         portrainImg.sprite = dialogue[count].cg;
+        leftImg.sprite = dialogue[count].leftcg;
         count++;
 
     }

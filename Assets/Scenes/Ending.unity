@@ -1589,6 +1589,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374979016}
   m_CullTransparentMesh: 1
+--- !u!114 &1386124044 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4863779302966007205, guid: 7c310bc19d72998439a7082019911c0f, type: 3}
+  m_PrefabInstance: {fileID: 1180463736}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1440727609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,23 +1703,29 @@ MonoBehaviour:
   imgNamePanel: {fileID: 1180463738}
   NextSceneName: Credits
   portrainImg: {fileID: 709959669}
+  leftImg: {fileID: 1386124044}
   firstclick: 0
   dialogue:
   - dialogue: "\uC544\uBE60\uB294\u2026\r"
     name: "\uC18C\uB140"
     cg: {fileID: 21300000, guid: e8f686fc1929ee64e90a0c38873ad4e5, type: 3}
+    leftcg: {fileID: 21300000, guid: c258ce095922afa46a6a09fcd4da1aeb, type: 3}
   - dialogue: "\u2026.\r\n"
     name: "\uC18C\uB140"
     cg: {fileID: 21300000, guid: e8f686fc1929ee64e90a0c38873ad4e5, type: 3}
+    leftcg: {fileID: 21300000, guid: c258ce095922afa46a6a09fcd4da1aeb, type: 3}
   - dialogue: "\uC5C4\uB9C8\uB3C4\u2026 \uC544\uBE60\uB3C4\u2026\r\n"
     name: "\uC18C\uB140"
     cg: {fileID: 21300000, guid: e8f686fc1929ee64e90a0c38873ad4e5, type: 3}
+    leftcg: {fileID: 21300000, guid: c258ce095922afa46a6a09fcd4da1aeb, type: 3}
   - dialogue: "\uB108\uBB34\u2026 \uC18C\uC911\uD55C \uCD94\uC5B5\uC774 \uB410\uC5B4\uC694..\r\n"
     name: "\uC18C\uB140"
     cg: {fileID: 21300000, guid: 19094a59ca430c74a90f8b0651333ade, type: 3}
+    leftcg: {fileID: 21300000, guid: c258ce095922afa46a6a09fcd4da1aeb, type: 3}
   - dialogue: "\uC5B8\uC81C\uB098\u2026 \uC0AC\uB791\uD574\uC694..!\r"
     name: "\uC18C\uB140"
     cg: {fileID: 21300000, guid: 19094a59ca430c74a90f8b0651333ade, type: 3}
+    leftcg: {fileID: 21300000, guid: c258ce095922afa46a6a09fcd4da1aeb, type: 3}
   cameraManager: {fileID: 0}
 --- !u!4 &1671488937
 Transform:

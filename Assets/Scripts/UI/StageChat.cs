@@ -11,7 +11,7 @@ public class Dialogue1
     public string dialogue;
     public string name;
     public Sprite cg;
-
+    public Sprite leftcg;
 }
 public class StageChat : MonoBehaviour
 {
@@ -30,6 +30,10 @@ public class StageChat : MonoBehaviour
 
     [SerializeField]
     public Image portrainImg;
+    [SerializeField]
+    public Image leftinImg;
+    [SerializeField]
+    public Sprite nullImage;
 
     [SerializeField]
     private ChangeNote changeNote;
@@ -65,6 +69,7 @@ public class StageChat : MonoBehaviour
         imgNamePanel.gameObject.SetActive(_flag);
         txt_NameDialogue.gameObject.SetActive(_flag);
         portrainImg.gameObject.SetActive(_flag);
+        leftinImg.gameObject.SetActive(_flag);
         txt_Dialogue.gameObject.SetActive(_flag);
         bindPanel.gameObject.SetActive(_flag);
         isDialogue = _flag;
@@ -75,6 +80,15 @@ public class StageChat : MonoBehaviour
         //첫번째 대사와 첫번째 cg부터 계속 다음 cg로 진행되면서 화면에 보이게 된다. 
         txt_Dialogue.text = dialogue[count].dialogue;
         txt_NameDialogue.text = dialogue[count].name;
+        if(dialogue[count].leftcg == null)
+        {
+            leftinImg.sprite = nullImage;
+        }
+        if(dialogue[count].cg == null)
+        {
+            portrainImg.sprite = nullImage;
+        }
+        leftinImg.sprite = dialogue[count].leftcg;
         portrainImg.sprite = dialogue[count].cg;
 
         count++;
