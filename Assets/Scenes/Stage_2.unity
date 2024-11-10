@@ -1224,6 +1224,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8199484826710507250, guid: 06d2482670e58fb41845d614bb622750, type: 3}
+      propertyPath: MoveSpeed
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
