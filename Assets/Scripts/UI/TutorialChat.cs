@@ -60,6 +60,8 @@ public class TutorialChat : MonoBehaviour
         imgNamePanel.gameObject.SetActive(_flag);
         txt_NameDialogue.gameObject.SetActive(_flag);
         txt_Dialogue.gameObject.SetActive(_flag);
+        portrainImg.gameObject.SetActive(_flag);
+
         isDialogue = _flag;
     }
 
