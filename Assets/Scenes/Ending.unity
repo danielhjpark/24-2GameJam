@@ -932,6 +932,7 @@ MonoBehaviour:
   isClear: 0
   bools: 000000
   popUpUI: {fileID: 0}
+  destroyObject: {fileID: 0}
 --- !u!114 &975638339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1457,7 +1458,7 @@ MonoBehaviour:
   txt_NameDialogue: {fileID: 1180463740}
   imgTextPanel: {fileID: 1180463739}
   imgNamePanel: {fileID: 1180463738}
-  NextSceneName: 
+  NextSceneName: Credits
   dialogue:
   - dialogue: "\uC544\uBE60\uB3C4 \uB098\uC640 \uAC19\uC558\uAD6C\uB098\u2026\uC5C4\uB9C8\uB97C
       \uADF8\uB9AC\uC6CC \uD588\uAD6C\uB098\u2026\r"

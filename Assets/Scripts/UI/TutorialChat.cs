@@ -28,6 +28,14 @@ public class TutorialChat : MonoBehaviour
 
     [SerializeField] private _Dialogue[] dialogue;
 
+    [SerializeField]
+    private GameObject Book;
+    [SerializeField]
+    private Sprite OpenBook;
+
+    [SerializeField]
+    private bool isChenge = false;
+
     private void Awake()
     {
         ShowDialogue();
@@ -55,7 +63,11 @@ public class TutorialChat : MonoBehaviour
         txt_Dialogue.text = dialogue[count].dialogue;
         txt_NameDialogue.text = dialogue[count].name;
         count++; //다음 대사와 cg가 나오도록 
-
+        if(count == 5)//해당 다이얼로그일 때 
+        {
+            Book.gameObject.GetComponent<SpriteRenderer>().sprite = OpenBook;
+            //사운드 재생 해야함.!!!!!!!!!!!!!!!!!!!!!!!!!
+        }
     }
 
     // Update is called once per frame

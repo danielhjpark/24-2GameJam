@@ -82,10 +82,10 @@ public class EndingChat : MonoBehaviour
                 else
                 {
                     ONOFF(false); //대사가 끝남
+                    SceneManager.LoadScene(NextSceneName);
                     //cameraManager.sceneDone = false;
                     //GameManager.Instance.Player.isMoving = true;
                     //GameManager.Instance.Player.gameObject.SetActive(true);
-                    //SceneManager.LoadScene(NextSceneName);
                 }
             }
         }
