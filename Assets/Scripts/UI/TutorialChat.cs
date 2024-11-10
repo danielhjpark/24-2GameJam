@@ -31,10 +31,13 @@ public class TutorialChat : MonoBehaviour
     [SerializeField]
     private GameObject Book;
     [SerializeField]
-    private Sprite OpenBook;
+    private GameObject OpenBook;
 
     [SerializeField]
     private bool isChenge = false;
+
+    [SerializeField]
+    private string NextScene = "Stage_1";
 
     private void Awake()
     {
@@ -65,7 +68,8 @@ public class TutorialChat : MonoBehaviour
         count++; //다음 대사와 cg가 나오도록 
         if(count == 5)//해당 다이얼로그일 때 
         {
-            Book.gameObject.GetComponent<SpriteRenderer>().sprite = OpenBook;
+            Book.gameObject.SetActive(false);
+            OpenBook.gameObject.SetActive(true);
             //사운드 재생 해야함.!!!!!!!!!!!!!!!!!!!!!!!!!
         }
     }
@@ -86,9 +90,15 @@ public class TutorialChat : MonoBehaviour
                 else
                 {
                     ONOFF(false); //대사가 끝남
-                    SceneManager.LoadScene("Stage_1");
+                    StartCoroutine(ReadBook());
                 }
             }
         }
+    }
+
+    IEnumerator ReadBook()
+    {
+        yield return new WaitForSeconds(2.0f);
+        SceneManager.LoadScene(NextScene);
     }
 }
