@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ManCup : MonoBehaviour
@@ -7,6 +8,10 @@ public class ManCup : MonoBehaviour
     [SerializeField] public bool hasHotWater = false;
     [SerializeField] public CheckScript check;
     [SerializeField] public bool canGet = false;
+    [SerializeField] public PlaySound sound;
+
+    [SerializeField]
+    private Sprite SmokeSprite;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,7 +29,11 @@ public class ManCup : MonoBehaviour
             {
                 Debug.Log("Get");
                 check.Clear();
-                Destroy(this);
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = SmokeSprite;
+                sound.Play();
+                GameManager.Instance.Player.isMoving = false;
+                StartCoroutine(Stop());
+                
             }
         }
     }
@@ -35,5 +44,13 @@ public class ManCup : MonoBehaviour
         {
             canGet = false;
         }
+    }
+
+    IEnumerator Stop()
+    {
+        GameManager.Instance.Player.isMoving = false;
+        yield return new WaitForSeconds(2.0f);
+        GameManager.Instance.Player.isMoving = true;
+        Destroy(this);
     }
 }

@@ -11,6 +11,14 @@ public class Stage3SubManager : MonoBehaviour
     [SerializeField] public StageManager stageManager;
     [SerializeField] public GameObject lastObject;
 
+    [SerializeField] CameraManager cameraManager;
+
+    [SerializeField]
+    private StageChat stageChat;
+
+    [SerializeField]
+    private bool GoDialog = false;
+
     private void Start()
     {
         bools[0] = false;
@@ -42,10 +50,18 @@ public class Stage3SubManager : MonoBehaviour
 
     private void Update()
     {
+        if (lastObject == null)
+            return;
+        if (stageManager.check1&& stageManager.check2 && GoDialog == false)
+        {
+            GoDialog = true;
+            cameraManager.stageClear = true;
+        }
+
         if (lastObject.activeSelf)
             return;
 
-        if(stageManager.check1 && stageManager.check2)
+        if(cameraManager.sceneDone)
         {
             lastObject.SetActive(true);
         }

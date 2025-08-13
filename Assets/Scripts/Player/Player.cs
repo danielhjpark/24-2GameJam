@@ -12,30 +12,35 @@ public class Player : MonoBehaviour
 
     private SpriteRenderer playerSpriteRenderer;
 
-
-    public GameObject target;
-
     Vector3 movement;
 
     public bool isMoving = true;
+
+    [SerializeField]
+    private UIClock uiClock;
 
     private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
         animator = gameObject.GetComponent<Animator>();
+        uiClock = GameObject.Find("Canvas/UPPanel/PopUpButton").GetComponent<UIClock>();
     }
-
     private void FixedUpdate()
     {
         if(isMoving)
         {
             Move();
         }
+        else
+        {
+            animator.SetBool("Walk", false);
+        }
     }
 
     void Move()
     {
+        Debug.Log("CanMoving");
         Vector3 moveVelocity = Vector3.zero;
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
@@ -67,21 +72,22 @@ public class Player : MonoBehaviour
             animator.SetBool("Walk", false);
         }
 
+        Debug.Log(moveVelocity);
+
         transform.position += moveVelocity * MoveSpeed * Time.deltaTime;
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(collision.gameObject.tag == "TalkTag")
+        if (other.CompareTag("Object"))
         {
-            target = collision.gameObject;
+            uiClock.TriggerAnimation(true); // 정방향 애니메이션 트리거
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (collision.gameObject.tag == "TalkTag")
+        if (other.CompareTag("Object"))
         {
-            target = null;
+            uiClock.TriggerAnimation(false); // 역방향 애니메이션 트리거
         }
     }
 }

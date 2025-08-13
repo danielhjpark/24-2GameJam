@@ -13,6 +13,8 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     Transform onDragParent;
     [HideInInspector]
     public Transform startParent;
+    [SerializeField]
+    private PlaySound soundPlay;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -40,6 +42,10 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         {
             transform.SetParent(startParent);
             transform.position = startPosition;
+        }
+        if(soundPlay != null)
+        {
+            soundPlay.Play();
         }
     }
 }

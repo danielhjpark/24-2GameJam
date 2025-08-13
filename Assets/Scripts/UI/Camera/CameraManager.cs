@@ -32,6 +32,9 @@ public class CameraManager : MonoBehaviour
     [SerializeField]
     public bool sceneDone = false;
 
+    [SerializeField]
+    private StageChat stageChat;
+
     private void Awake()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -53,14 +56,23 @@ public class CameraManager : MonoBehaviour
         if(stageClear && nowTarget != clearCameratr && sceneDone == false)
         {
             nowTarget = clearCameratr;
+            StartCoroutine(delay());
         }
-        else if(sceneDone == true)
+
+        if(GameManager.Instance.playMode == "black" && sceneDone == true)
         {
             nowTarget = playerTransform;
         }
-            LimitCameraArea();
+
+        LimitCameraArea();
     }
 
+    IEnumerator delay()
+    {
+        GameManager.Instance.Player.gameObject.SetActive(false);
+        yield return new WaitForSeconds(1.5f);
+        stageChat.ShowDialogue();
+    }
     void LimitCameraArea()
     {
         transform.position = Vector3.Lerp(transform.position,

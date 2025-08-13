@@ -12,6 +12,8 @@ public class CleanObject: ItemBase
 
     private SpriteRenderer spriteRenderer;
 
+    [SerializeField] private PlaySound soundPlay;
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -26,5 +28,6 @@ public class CleanObject: ItemBase
         this.spriteRenderer.sprite = changeImage;
         isClean = true;
         script.TidyUP(tidyNum);
+        soundPlay.Play();
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TimeObject
   - TalkTag
+  - Object
   layers:
   - Default
   - TransparentFX

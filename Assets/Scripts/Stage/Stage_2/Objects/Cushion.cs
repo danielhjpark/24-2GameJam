@@ -7,6 +7,7 @@ public class Cushion : ItemBase
     [SerializeField] public CheckScrpitBase script;
     [SerializeField] public GameObject hideObject;
     [SerializeField] public GameObject moveDirection;
+    [SerializeField] private PlaySound soundPlay;
 
     public override void UseItem()
     {
@@ -17,6 +18,7 @@ public class Cushion : ItemBase
         this.transform.position = moveDirection.transform.position;
         Destroy(moveDirection);
         script.Clear();
+        soundPlay.Play();
         Debug.Log("¹æ¼® ¿Å±è");
     }
 }

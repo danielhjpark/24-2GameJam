@@ -10,6 +10,5 @@ public class CheckScript : MonoBehaviour
     public void Clear()
     {
         stage1.Check(clearNum);
-        stage1.CheckAllList();
     }
 }

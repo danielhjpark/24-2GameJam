@@ -11,6 +11,9 @@ public class StageManager : MonoBehaviour
     [SerializeField]
     public bool check3 = false; //스테이지 클리어 조건 3
 
+    [SerializeField]
+    private CameraManager cameraManager;
+
     public void Check(int num)
     {
         switch (num)
@@ -29,12 +32,11 @@ public class StageManager : MonoBehaviour
         }
     }
 
-    public void CheckAllList(string nextStage)
+    private void Update()
     {
-        if(check1 && check2 && check3)
+        if (check1 && check2 && check3 && cameraManager.sceneDone == false)
         {
-            // 스테이지 클리어
-            GameManager.Instance.sceneManager.NextStage(nextStage);
+            cameraManager.stageClear = true;
         }
     }
 }

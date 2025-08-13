@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class GetItemBase : MonoBehaviour
 {
+    [SerializeField] public ItemBase item;
 
     [SerializeField] public bool canGet = false;
-    [SerializeField] public ItemBase item;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
             canGet = true;
+            
         }
     }
 

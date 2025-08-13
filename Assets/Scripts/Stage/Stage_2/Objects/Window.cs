@@ -9,8 +9,10 @@ public class Window : ItemBase
     [SerializeField] public bool isClose = false;
     [SerializeField] public Sprite changeImage;
     [SerializeField] public Sprite nowImage;
+    [SerializeField] private PlaySound soundPlay;
 
     private SpriteRenderer spriteRenderer;
+
 
     private void Start()
     {
@@ -26,5 +28,6 @@ public class Window : ItemBase
         this.spriteRenderer.sprite = changeImage;
         isClose = true;
         script.Clear();
+        soundPlay.Play();
     }
 }
